@@ -1,0 +1,6 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/complement
+@bin bin/csdp
+@bin bin/graphtoprob
+@bin bin/rand_graph
+@bin bin/theta

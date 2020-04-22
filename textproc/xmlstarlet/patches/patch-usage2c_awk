@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: usage2c.awk
+--- usage2c.awk.orig
++++ usage2c.awk
+@@ -11,6 +11,7 @@ BEGIN {
+ #   }
+ length(command_name) == 0 {
+     command_name = FILENAME;
++    sub(".*/", "", command_name)
+     sub(/\.txt$/, "", command_name);
+     sub(/^([^\/]+\/)*/, "", command_name);
+     gsub(/-/, "_", command_name);

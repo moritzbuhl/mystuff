@@ -1,0 +1,7 @@
+@comment $OpenBSD: PLIST,v$
+@bin bin/xmlstarlet
+@man man/man1/xmlstarlet.1
+share/doc/xmlstarlet/
+share/doc/xmlstarlet/html.css
+share/doc/xmlstarlet/xmlstarlet-ug.html
+share/doc/xmlstarlet/xmlstarlet.txt

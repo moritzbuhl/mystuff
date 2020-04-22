@@ -1,0 +1,22 @@
+@comment $OpenBSD: PLIST,v$
+share/texmf-dist/
+share/texmf-dist/bibtex/
+share/texmf-dist/bibtex/bst/
+share/texmf-dist/bibtex/bst/html-a.bst
+share/texmf-dist/bibtex/bst/html-aa.bst
+share/texmf-dist/bibtex/bst/html-ac.bst
+share/texmf-dist/bibtex/bst/html-aca.bst
+share/texmf-dist/bibtex/bst/html-acr.bst
+share/texmf-dist/bibtex/bst/html-acra.bst
+share/texmf-dist/bibtex/bst/html-ar.bst
+share/texmf-dist/bibtex/bst/html-ara.bst
+share/texmf-dist/bibtex/bst/html-n.bst
+share/texmf-dist/bibtex/bst/html-na.bst
+share/texmf-dist/bibtex/bst/html-nc.bst
+share/texmf-dist/bibtex/bst/html-nca.bst
+share/texmf-dist/bibtex/bst/html-ncr.bst
+share/texmf-dist/bibtex/bst/html-ncra.bst
+share/texmf-dist/bibtex/bst/html-nr.bst
+share/texmf-dist/bibtex/bst/html-nra.bst
+share/texmf-dist/bibtex/bst/html-u.bst
+share/texmf-dist/bibtex/bst/html-ua.bst

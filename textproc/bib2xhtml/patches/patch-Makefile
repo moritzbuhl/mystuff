@@ -1,0 +1,43 @@
+$OpenBSD$
+
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -3,10 +3,7 @@
+ # This is written to run under Cygwin. YMMV
+ 
+ export NAME=bib2xhtml
+-BINDIR=$(HOME)/bin/
+-BIBTEXDIR=$(HOME)/texmf/bibtex/bst/
+-CGIDIR=/usr/dcs/www/cgi-bin/
+-DISTDIR=/cygdrive/c/dds/pubs/web/home/sw/textproc/$(NAME)
++BIBTEXDIR=${DESTDIR}/usr/local/share/texmf-dist/bibtex/bst
+ 
+ BSTFILES=\
+ 	html-a.bst html-aa.bst html-ac.bst html-aca.bst html-acr.bst\
+@@ -16,7 +13,7 @@ BSTFILES=\
+ 
+ DOCFILES=$(NAME).html $(NAME).txt $(NAME).pdf index.html static.html showeg.js example.bib logo.jpeg
+ ROOTFILES=README.md COPYING ${BSTFILES} $(DOCFILES) bibsearch.pl Makefile $(NAME).man ChangeLog html-btxbst.doc gen-bst.pl $(NAME).pl
+-VERSION=$(shell git describe --tags --abbrev=4 HEAD)
++VERSION=OpenBSD
+ 
+ default: $(DOCFILES) eg ${BSTFILES} syntax
+ 
+@@ -42,6 +39,8 @@ $(NAME)-$(VERSION).tar.gz $(NAME)-$(VERSION).zip: $(RO
+ 	zip -r  $(NAME)-$(VERSION).zip $(NAME)-$(VERSION)
+ 	rm -rf $(NAME)-$(VERSION)
+ 
++$(NAME).man:
++
+ $(NAME).ps: $(NAME).man
+ 	groff -man -Tps <$? > $@
+ 
+@@ -64,6 +63,7 @@ syntax: $(NAME).pl bibsearch.pl
+ 	cat syntax
+ 
+ install:
++	mkdir -p $(BIBTEXDIR)
+ 	for i in *.bst; do\
+ 	    install -m 644 $$i $(BIBTEXDIR);\
+ 	done

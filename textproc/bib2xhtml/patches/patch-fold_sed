@@ -1,0 +1,11 @@
+$OpenBSD$
+
+Index: fold.sed
+--- fold.sed.orig
++++ fold.sed
+@@ -1,4 +1,4 @@
+-#!/bin/sed -nf
++#!/usr/bin/sed -nf
+ #
+ # Fold blank-line separated blocks into a single line
+ 
