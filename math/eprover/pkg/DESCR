@@ -1,0 +1,6 @@
+E is an equational theorem prover. That means it is a program that
+you can stuff a mathematical specification (in many-sorted first-order
+logic with equality) and a hypothesisconjecture into, and which
+will then run forever, using up all of your machines resources.
+Very occasionally it will find a proof for the conjecture and tell
+you so

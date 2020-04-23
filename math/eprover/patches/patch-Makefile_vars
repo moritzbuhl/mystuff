@@ -1,0 +1,25 @@
+$OpenBSD$
+
+Index: Makefile.vars
+--- Makefile.vars.orig
++++ Makefile.vars
+@@ -15,8 +15,8 @@
+ # executables. Edit it to point to wherever you want them to live.
+ # Note that ./configure takes care of this automatically.
+ 
+-EXECPATH = /Users/schulz/SOURCES/Projects/E/PROVER
+-MANPATH = /Users/schulz/SOURCES/Projects/E/DOC/man
++EXECPATH = ${PREFIX}/E/bin
++MANPATH = ${PREFIX}/E/man
+ STAREXECPATH=$(HOME)/StarExec
+ 
+ # abstracting away from picosat version
+@@ -29,7 +29,7 @@ STAREXECPATH=$(HOME)/StarExec
+ # unaffected, but certain services or non-essential parts will not be
+ # available.
+ 
+-MAKE       = make      # Should also work with GNU make
++MAKE       = gmake      # Should also work with GNU make
+ TAR        = tar       # Optional, for building distributions
+ GZIP       = gzip
+ MCOPY      = mcopy     # Optional, for building floppy disks

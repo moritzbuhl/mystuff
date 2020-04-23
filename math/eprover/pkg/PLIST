@@ -1,0 +1,31 @@
+@comment $OpenBSD: PLIST,v$
+E/
+E/bin/
+@bin E/bin/checkproof
+@bin E/bin/e_axfilter
+@bin E/bin/e_deduction_server
+@bin E/bin/e_ltb_runner
+@bin E/bin/e_stratpar
+@bin E/bin/eground
+@bin E/bin/ekb_create
+@bin E/bin/ekb_delete
+@bin E/bin/ekb_ginsert
+@bin E/bin/ekb_insert
+@bin E/bin/epclextract
+@bin E/bin/eprover
+E/bin/picosat
+E/lib/
+E/lib/CONTRIB.a
+E/man/
+E/man/checkproof.1
+E/man/e_axfilter.1
+E/man/e_deduction_server.1
+E/man/e_ltb_runner.1
+E/man/e_stratpar.1
+E/man/eground.1
+E/man/ekb_create.1
+E/man/ekb_delete.1
+E/man/ekb_ginsert.1
+E/man/ekb_insert.1
+E/man/epclextract.1
+E/man/eprover.1
