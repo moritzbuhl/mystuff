@@ -1,0 +1,5 @@
+PicoSAT is a SAT solver with an extensive API. It can generate
+proofs and cores in memory. The proof trace is compressed and thus
+needs much less space than BooleForce. The most recent version comes
+with the utility PicoMUS to compute a minimal unsatisfiable core
+respectively set (MUS).

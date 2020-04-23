@@ -1,6 +1,8 @@
 @comment $OpenBSD: PLIST,v$
+@bin bin/picogcnf
+@bin bin/picomcs
+@bin bin/picomus
 @bin bin/picosat
 include/picosat.h
 @static-lib lib/libpicosat.a
 @so lib/libpicosat.so
-share/picosat.h
