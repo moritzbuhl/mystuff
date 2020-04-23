@@ -1,0 +1,30 @@
+@comment $OpenBSD: PLIST,v$
+share/fonts/
+@fontdir share/fonts/IsabelleDejaVu/
+@fontdir share/fonts/IsabelleDejaVu-hinted/
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSans-Bold.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSans-BoldOblique.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSans-Oblique.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSans.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSansMono-Bold.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSansMono-BoldOblique.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSansMono-Oblique.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSansMono.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSerif-Bold.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSerif-BoldItalic.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSerif-Italic.ttf
+share/fonts/IsabelleDejaVu-hinted/IsabelleDejaVuSerif.ttf
+share/fonts/IsabelleDejaVu-hinted/Vacuous.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSans-Bold.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSans-BoldOblique.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSans-Oblique.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSans.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSansMono-Bold.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSansMono-BoldOblique.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSansMono-Oblique.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSansMono.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSerif-Bold.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSerif-BoldItalic.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSerif-Italic.ttf
+share/fonts/IsabelleDejaVu/IsabelleDejaVuSerif.ttf
+share/fonts/IsabelleDejaVu/Vacuous.ttf
