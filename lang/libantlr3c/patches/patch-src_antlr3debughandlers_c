@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: src/antlr3debughandlers.c
+--- src/antlr3debughandlers.c.orig
++++ src/antlr3debughandlers.c
+@@ -34,6 +34,7 @@
+ // THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+ #include    <antlr3.h>
++#include <netinet/tcp.h>
+ 
+ // Not everyone wishes to include the debugger stuff in their final deployment because
+ // it will then rely on being linked with the socket libraries. Hence if the programmer turns
