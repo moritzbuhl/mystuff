@@ -1,0 +1,21 @@
+$OpenBSD$
+
+Index: libpolyml/x86_dep.cpp
+--- libpolyml/x86_dep.cpp.orig
++++ libpolyml/x86_dep.cpp
+@@ -817,7 +817,7 @@ bool X86TaskData::AddTimeProfileCount(SIGNALCONTEXT *c
+ #if defined(HOSTARCHITECTURE_X86_64) && defined(__OpenBSD__)
+         // CPP defines missing in amd64/signal.h in OpenBSD
+         pc = (byte*)context->sc_rip;
+-        sp = (PolyWord*)context->sc_rsp;
++        sp = (stackItem*)context->sc_rsp;
+ #else // !HOSTARCHITEXTURE_X86_64 || !defined(__OpenBSD__)
+         pc = (byte*)context->sc_pc;
+         sp = (PolyWord*)context->sc_sp;
+@@ -1459,4 +1459,4 @@ void X86Module::GarbageCollect(ScanAddress *process)
+     if (callbackReturn != 0)
+         process->ScanRuntimeAddress((PolyObject**)&callbackReturn, ScanAddress::STRENGTH_STRONG);
+ #endif
+-}
+\ No newline at end of file
++}

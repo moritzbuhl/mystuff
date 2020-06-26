@@ -1,0 +1,30 @@
+/patch-Makefile/1.10/Tue Mar  3 11:28:48 2020//
+/patch-common_gypi/1.14/Result of merge//
+/patch-deps_cares_include_ares_h/1.2/Wed Feb 19 10:07:27 2020//
+/patch-deps_npm_bin_node-gyp-bin_node-gyp/1.4/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_lib_npm_js/1.8/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_node_modules_node-gyp_gyp_pylib_gyp_generator_make_py/1.8/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_node_modules_node-gyp_gyp_pylib_gyp_generator_ninja_py/1.5/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_node_modules_node-gyp_lib_build_js/1.8/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_node_modules_node-gyp_lib_find-python_js/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_npm_node_modules_node-gyp_lib_install_js/1.12/Wed Jun 17 07:48:16 2020//
+/patch-deps_openssl_config_Makefile/1.3/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_bn_conf_asm_h/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_bn_conf_no-asm_h/1.3/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_dso_conf_asm_h/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_dso_conf_no-asm_h/1.3/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_generate_gypi_pl/1.3/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_opensslconf_asm_h/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_config_opensslconf_no-asm_h/1.3/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_openssl_asm_gypi/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_openssl_openssl_no_asm_gypi/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_uv_src_unix_tcp_c/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_v8_src_base_cpu_cc/1.2/Tue Mar  3 11:28:48 2020//
+/patch-deps_v8_src_base_platform_platform-openbsd_cc/1.1/Tue Mar  3 11:28:48 2020//
+/patch-deps_v8_src_base_utils_random-number-generator_cc/1.3/Result of merge+Wed Jun 17 07:48:16 2020//
+/patch-deps_v8_src_logging_log-utils_h/1.1/Tue Mar  3 11:28:48 2020//
+/patch-lib_module_js/1.13/Result of merge+Wed Jun 17 07:48:16 2020//
+/patch-node_gypi/1.8/Result of merge//
+/patch-tools_icu_icu-generic_gyp/1.5/Tue Mar  3 11:28:48 2020//
+/patch-tools_test_py/1.8/Tue Mar  3 11:28:48 2020//
+D

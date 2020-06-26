@@ -1,0 +1,18 @@
+$OpenBSD$
+
+Index: libpolyml/elfexport.cpp
+--- libpolyml/elfexport.cpp.orig
++++ libpolyml/elfexport.cpp
+@@ -51,8 +51,11 @@
+ #define ASSERT(x)
+ #endif
+ 
+-#ifdef HAVE_ELF_H
++#if defined(HAVE_ELF_H) && !defined(__OpenBSD__)
+ #include <elf.h>
++#elif defined(HAVE_ELF_H)
++#include <elf.h>
++#include <machine/reloc.h>
+ #elif defined(HAVE_ELF_ABI_H)
+ #include <elf_abi.h>
+ #include <machine/reloc.h>

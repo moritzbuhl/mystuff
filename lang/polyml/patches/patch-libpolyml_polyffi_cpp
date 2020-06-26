@@ -1,0 +1,16 @@
+$OpenBSD$
+https://wiki.gentoo.org/wiki/Libffi_3.3_porting_notes/FFI_SYSV
+
+Index: libpolyml/polyffi.cpp
+--- libpolyml/polyffi.cpp.orig
++++ libpolyml/polyffi.cpp
+@@ -110,6 +110,9 @@ static struct _abiTable { const char *abiName; ffi_abi
+     {"ms_cdecl", FFI_MS_CDECL},
+ #elif defined(X86_WIN64)
+     {"win64", FFI_WIN64},
++#elif defined (X86_64) || (defined (__x86_64__) && defined (X86_DARWIN))
++    {"sysv", FFI_UNIX64},
++    {"unix64", FFI_UNIX64},
+ #elif defined(X86_ANY)
+     {"sysv", FFI_SYSV},
+     {"unix64", FFI_UNIX64},

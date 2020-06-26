@@ -1,0 +1,9 @@
+Poly/ML is a Standard ML implementation originally written in an
+experimental language called Poly. It has been fully compatible
+with the ML97 standard since version 4.0. For a full history, see
+here.
+
+Poly/ML takes a conservative approach to the Standard ML language
+and avoids incompatible extensions. It has added various library
+extensions particularly the thread library. Poly/ML's active
+development and unique features make it an exceptional implementation.
