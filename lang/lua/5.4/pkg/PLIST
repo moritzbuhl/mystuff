@@ -1,0 +1,21 @@
+@comment $OpenBSD: PLIST,v 1.2 2016/06/29 16:14:42 espie Exp $
+@option no-default-conflict
+@option is-branch
+@conflict lua->=5.3,<5.4
+@bin bin/lua54
+@bin bin/luac54
+include/lua-5.4/
+include/lua-5.4/lauxlib.h
+include/lua-5.4/lua.h
+include/lua-5.4/lua.hpp
+include/lua-5.4/luaconf.h
+include/lua-5.4/lualib.h
+@static-lib lib/liblua5.4.a
+lib/liblua5.4.so.
+lib/lua/
+lib/lua/5.4/
+lib/pkgconfig/lua54.pc
+@man man/man1/lua54.1
+@man man/man1/luac54.1
+share/lua/
+share/lua/5.4/
