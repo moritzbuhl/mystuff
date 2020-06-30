@@ -11,7 +11,7 @@ include/lua-5.4/lua.hpp
 include/lua-5.4/luaconf.h
 include/lua-5.4/lualib.h
 @static-lib lib/liblua5.4.a
-lib/liblua5.4.so.
+@lib lib/liblua5.4.so.${LIBlua5.4_VERSION}
 lib/lua/
 lib/lua/5.4/
 lib/pkgconfig/lua54.pc
