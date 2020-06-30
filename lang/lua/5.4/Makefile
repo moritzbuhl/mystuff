@@ -1,6 +1,6 @@
 # $OpenBSD: Makefile,v 1.9 2018/07/13 07:11:48 jsg Exp $
 
-PORTROACH=	limit:^5\.3
+PORTROACH=	limit:^5\.4
 
 VERSION=	5.4.0
 PKGSPEC=	lua->=5.4,<5.5
