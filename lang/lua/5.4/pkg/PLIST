@@ -1,7 +1,7 @@
-@comment $OpenBSD: PLIST,v 1.2 2016/06/29 16:14:42 espie Exp $
+@comment $OpenBSD$
 @option no-default-conflict
 @option is-branch
-@conflict lua->=5.3,<5.4
+@conflict lua->=5.4,<5.5
 @bin bin/lua54
 @bin bin/luac54
 include/lua-5.4/
