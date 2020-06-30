@@ -5,7 +5,7 @@ PORTROACH=	limit:^5\.3
 VERSION=	5.4.0
 PKGSPEC=	lua->=5.4,<5.5
 
-SHARED_LIBS=	lua5.3 ${VERSION:R}
+SHARED_LIBS=	lua5.4 ${VERSION:R}
 
 WANTLIB=	c m edit curses
 
