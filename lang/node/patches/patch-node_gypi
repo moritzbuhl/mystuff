@@ -1,4 +1,4 @@
-$OpenBSD: patch-node_gypi,v 1.8 2020/04/04 16:42:57 abieber Exp $
+$OpenBSD: patch-node_gypi,v 1.7 2019/11/24 18:42:28 abieber Exp $
 
 Index: node.gypi
 --- node.gypi.orig
@@ -19,27 +19,3 @@ Index: node.gypi
      }],
      [ 'OS=="aix"', {
        'defines': [
---- /usr/ports/pobj/node-12.18.0/node-v12.18.0/node.gyp.orig	Fri Jun 26 13:32:05 2020
-+++ /usr/ports/pobj/node-12.18.0/node-v12.18.0/node.gyp	Fri Jun 26 13:32:19 2020
-@@ -12,14 +12,14 @@
-     'node_shared%': 'false',
-     'force_dynamic_crt%': 0,
-     'node_module_version%': '',
--    'node_shared_brotli%': 'false',
--    'node_shared_zlib%': 'false',
--    'node_shared_http_parser%': 'false',
--    'node_shared_cares%': 'false',
--    'node_shared_libuv%': 'false',
--    'node_shared_nghttp2%': 'false',
-+    'node_shared_brotli%': 'true',
-+    'node_shared_zlib%': 'true',
-+    'node_shared_http_parser%': 'true',
-+    'node_shared_cares%': 'true',
-+    'node_shared_libuv%': 'true',
-+    'node_shared_nghttp2%': 'true',
-     'node_use_openssl%': 'true',
--    'node_shared_openssl%': 'false',
-+    'node_shared_openssl%': 'true',
-     'node_v8_options%': '',
-     'node_core_target_name%': 'node',
-     'node_lib_target_name%': 'libnode',

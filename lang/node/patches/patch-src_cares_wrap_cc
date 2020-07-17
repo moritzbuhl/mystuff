@@ -3,7 +3,7 @@ $OpenBSD$
 Index: src/cares_wrap.cc
 --- src/cares_wrap.cc.orig
 +++ src/cares_wrap.cc
-@@ -51,6 +51,7 @@
+@@ -51,6 +53,7 @@
  
  #if defined(__OpenBSD__)
  # define AI_V4MAPPED 0

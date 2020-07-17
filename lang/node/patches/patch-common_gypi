@@ -1,0 +1,14 @@
+$OpenBSD$
+
+Index: common.gypi
+--- common.gypi.orig
++++ common.gypi
+@@ -372,7 +372,6 @@
+             'standalone_static_library': 1,
+           }],
+           ['OS=="openbsd"', {
+-            'cflags': [ '-I/usr/local/include' ],
+-            'ldflags': [ '-Wl,-z,wxneeded' ],
++            'ldflags': [ '-Wl,-z,wxneeded,-rpath=/usr/local/lib/eopenssl11' ],
+           }],
+         ],

@@ -33,11 +33,17 @@ MASTER_SITES =		${HOMEPAGE}dist/${NODE_VERSION}/
 
 MODULES =		lang/python
 
-WANTLIB += c execinfo kvm m pthread util ${COMPILER_LIBCXX}
+WANTLIB += brotlidec c execinfo kvm m pthread util uv z ${COMPILER_LIBCXX}
 
 COMPILER =		base-clang ports-gcc
 
-LIB_DEPENDS =		devel/libexecinfo
+LIB_DEPENDS =		archivers/brotli \
+			devel/libexecinfo \
+			devel/libuv \
+			net/libcares \
+			security/openssl/1.1 \
+			textproc/icu4c \
+			www/nghttp2
 
 USE_GMAKE =		Yes
 
@@ -51,16 +57,16 @@ CONFIGURE_STYLE =	simple
 
 # libpath and includes aren't picked up, but I added them here as a note.
 # The patch for node.gyp is where they are actually being set.
-# --shared-*-{includes,libname,libpath}
 CONFIGURE_ARGS =	--prefix=${PREFIX} --with-intl=system-icu \
-	--shared-brotli --shared-cares --shared-libuv --shared-nghttp2 \
-	--shared-openssl --shared-zlib
-# --shared-http-parser
+	--shared-brotli --shared-libuv --shared-nghttp2 \
+	--shared-zlib --shared-cares --shared-openssl \
+	--shared-cares-includes=${WRKSRC}/deps/cares/include \
+	--shared-openssl-includes=/usr/local/include/eopenssl11 \
+	--shared-openssl-libpath=/usr/local/lib/eopenssl11
 
-
-#.if "${MACHINE_ARCH}" ==	"aarch64"
-#CONFIGURE_ARGS +=	--openssl-no-asm
-#.endif
+.if "${MACHINE_ARCH}" ==	"aarch64"
+CONFIGURE_ARGS +=	--openssl-no-asm
+.endif
 
 SUBST_VARS += 		DISTNAME
 SUBST_VARS += 		DISTFILES
@@ -93,32 +99,22 @@ pre-configure:
 		${WRKDIST}/node.gyp \
 		${WRKDIST}/common.gypi \
 		${WRKDIST}/tools/test.py
-	#cd ${WRKDIST}/deps/openssl/config && \
-	#	${MAKE_PROGRAM} ASM_ARCHS=BSD-x86-elf NO_ASM_ARCHS=
 	sed -i 's/-ldl//' ${WRKSRC}/deps/uv/uv.gyp
 	sed -i 's/-ldl//' ${WRKSRC}/deps/v8/tools/run-wasm-api-tests.py
 	sed -i 's/-ldl//' ${WRKSRC}/tools/gyp/tools/emacs/testdata/media.gyp
 	sed -i 's/-ldl//' ${WRKSRC}/tools/gyp/tools/emacs/testdata/media.gyp.fontified
 	sed -i 's/-ldl//' ${WRKSRC}/tools/v8_gypfiles/v8.gyp
-	#rm -rf ${WRKSRC}/deps/acorn
-	#rm -rf ${WRKSRC}/deps/acorn-plugins
 	rm -rf ${WRKSRC}/deps/brotli/c
 	rm -rf ${WRKSRC}/deps/cares/src
-	# rm -rf ${WRKSRC}/deps/histogram # XXX https://github.com/HdrHistogram/HdrHistogram_c
 	rm -rf ${WRKSRC}/deps/icu-small
 	rm -rf ${WRKSRC}/deps/nghttp2/lib
-	#rm -rf ${WRKSRC}/deps/node-inspect
-	#rm -rf ${WRKSRC}/deps/npm
 	rm -rf ${WRKSRC}/deps/openssl/openssl
-	#rm -rf ${WRKSRC}/deps/uv # XXX
-	#rm -rf ${WRKSRC}/deps/uvwasi # XXX
-	#rm -rf ${WRKSRC}/deps/v8 # XXX
-	#rm -rf ${WRKSRC}/deps/zlib # XXX :-(
-
-post-configure:
-	#sed -i 's/-ldl //' ${WRKSRC}/out/deps/openssl/openssl.target.mk
-	#sed -i 's/-ldl //' ${WRKSRC}/out/deps/openssl/openssl-cli.target.mk
-	#sed -i 's/-ldl //' ${WRKSRC}/out/deps/openssl/openssl-cli.target.mk
+	rm -rf ${WRKSRC}/deps/zlib/google
+	rm -rf ${WRKSRC}/deps/zlib/*.c
+	#rm -rf ${WRKSRC}/deps/uv/{src,include} # XXX testing
+	#rm -rf ${WRKSRC}/deps/histogram # XXX https://github.com/HdrHistogram/HdrHistogram_c
+	#rm -rf ${WRKSRC}/deps/uvwasi/src # XXX https://github.com/cjihrig/uvwasi
+	#rm -rf ${WRKSRC}/deps/v8 # XXX htpps://github.com/v8/v8
 
 post-install:
 	${MODPY_BIN} ${MODPY_LIBDIR}/compileall.py \
