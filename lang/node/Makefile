@@ -58,11 +58,15 @@ CONFIGURE_STYLE =	simple
 # libpath and includes aren't picked up, but I added them here as a note.
 # The patch for node.gyp is where they are actually being set.
 CONFIGURE_ARGS =	--prefix=${PREFIX} --with-intl=system-icu \
-	--shared-brotli --shared-libuv --shared-nghttp2 \
-	--shared-zlib --shared-cares --shared-openssl \
-	--shared-cares-includes=${WRKSRC}/deps/cares/include \
-	--shared-openssl-includes=/usr/local/include/eopenssl11 \
-	--shared-openssl-libpath=/usr/local/lib/eopenssl11
+	--shared-brotli \
+	--shared-libuv \
+	--shared-nghttp2 \
+	--shared-zlib \
+	--shared-cares \
+	--shared-openssl \
+	--shared-cares-includes=${WRKSRC}/deps/cares/include \ # XXX FIXME
+	--shared-openssl-includes=${LOCALBASE}/include/eopenssl11 \
+	--shared-openssl-libpath=${LOCALBASE}/lib/eopenssl11
 
 .if "${MACHINE_ARCH}" ==	"aarch64"
 CONFIGURE_ARGS +=	--openssl-no-asm
@@ -99,11 +103,11 @@ pre-configure:
 		${WRKDIST}/node.gyp \
 		${WRKDIST}/common.gypi \
 		${WRKDIST}/tools/test.py
-	sed -i 's/-ldl//' ${WRKSRC}/deps/uv/uv.gyp
-	sed -i 's/-ldl//' ${WRKSRC}/deps/v8/tools/run-wasm-api-tests.py
-	sed -i 's/-ldl//' ${WRKSRC}/tools/gyp/tools/emacs/testdata/media.gyp
-	sed -i 's/-ldl//' ${WRKSRC}/tools/gyp/tools/emacs/testdata/media.gyp.fontified
-	sed -i 's/-ldl//' ${WRKSRC}/tools/v8_gypfiles/v8.gyp
+	cd ${WRKSRC}; sed -i 's/-ldl( |$$)' deps/uv/uv.gyp \
+		deps/v8/tools/run-wasm-api-tests.py \
+		tools/gyp/tools/emacs/testdata/media.gyp \
+		tools/gyp/tools/emacs/testdata/media.gyp.fontified \
+		tools/v8_gypfiles/v8.gyp
 	rm -rf ${WRKSRC}/deps/brotli/c
 	rm -rf ${WRKSRC}/deps/cares/src
 	rm -rf ${WRKSRC}/deps/icu-small
