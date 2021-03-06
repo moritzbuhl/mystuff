@@ -1,0 +1,71 @@
+
+rewrite of .htaccess.dist to OpenBSD http daemon:
+
+server "domain.tld" {
+	listen on * port 80
+	root "/tasmoadmin"
+
+	# Note that this matches "*.php*" anywhere in the request path.
+	location "/*.php*" {
+		fastcgi socket "/run/php-fpm.sock"
+		pass
+	}
+
+	location "/" {
+		root "/tasmoadmin"
+		request rewrite "/index.php"
+	}
+
+	##Logout/Login Redirect
+	location "/login" {
+		root "/tasmoadmin"
+		request rewrite "/login.php"
+	}
+
+	location "/logout" {
+		root "/tasmoadmin"
+		request rewrite "/login.php?logout=logout"
+	}
+
+	location "/doAjaxAll" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?doAjaxAll=doAjaxAll"
+	}
+
+	location "/doAjax" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?doAjaxAll=doAjax"
+	}
+
+	##Lang Switch detection
+	location match "/(%l%l)/$" {
+		root "/tasmoadmin"
+		block return 301 "/index.php?lang=%1"
+	}
+
+	##Pages routing
+	location match "^/([%a_][%a_][%a_]+)/([%a_]+)/([%d_]+)/?$" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?page=%1&action=%2&device_id=%3"
+	}
+
+	location match "^/([%a_][%a_][%a_]+)/force/?$" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?page=%1&force=1"
+	}
+
+	location match "^/([%a_][%a_][%a_]+)/([%a_]+)/?$" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?page=%1&action=%2"
+	}
+
+	location match "^/([%a_][%a_][%a_]+)/([%d_]+)/?$" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?page=%1&device_id=%2"
+	}
+
+	location match "^/([%a_][%a_][%a_]+)/?$" {
+		root "/tasmoadmin"
+		request rewrite "/index.php?page=%1"
+	}
+}
