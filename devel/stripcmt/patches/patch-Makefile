@@ -1,0 +1,13 @@
+$OpenBSD$
+
+Index: Makefile
+--- Makefile.orig
++++ Makefile
+@@ -2,7 +2,6 @@
+ # --
+ # Excuse me for this ugly thing.
+ 
+-CC = gcc
+ # CFLAGS = -s -O3 -Wall -ansi -pedantic -ffast-math -fexpensive-optimizations
+ CFLAGS = -s -Wall -ansi -pedantic
+ INSTALL = `which install`
