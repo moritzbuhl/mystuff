@@ -1,0 +1,8 @@
+The first deliverable of HashClash is a fast collision generating
+algorithm for MD5.  This method finds collisions without any special
+properties (other than those that can be expected from the Wang-type
+methods).
+
+The version 1.0.0.5 is not only extended with V. Klima's tunnels,
+but also with additional differential paths to speed up collision
+finding.
