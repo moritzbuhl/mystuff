@@ -27,6 +27,7 @@ MAINTAINER =	Moritz Buhl <mbuhl@openbsd.org>
 # source code this disclaimer, the copyright notice and the version
 # number should be present.
 PERMIT_PACKAGE =	didn't ask for consent
+PERMIT_DISTFILES =	didn't ask for consent
 
 MASTER_SITES =		https://www.win.tue.nl/hashclash/
 
