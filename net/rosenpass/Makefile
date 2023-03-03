@@ -15,6 +15,8 @@ MODULES =		devel/cargo
 BUILD_DEPENDS =		devel/llvm \
 			security/rust-ring
 
+RUN_DEPENDS =		shells/bash
+
 MAKE_ENV =		LIBCLANG_PATH="/usr/local/lib/"
 
 CONFIGURE_STYLE =	cargo
