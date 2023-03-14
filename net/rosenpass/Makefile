@@ -16,10 +16,10 @@ WANTLIB +=		c c++abi pthread
 
 MODULES =		devel/cargo
 BUILD_DEPENDS =		devel/llvm \
-			security/libsodium \
 			security/rust-ring
 
 RUN_DEPENDS =		net/wireguard-tools \
+			security/libsodium \
 			shells/bash
 
 MAKE_ENV =		LIBCLANG_PATH="${LOCALBASE}/lib/"

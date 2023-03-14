@@ -12,7 +12,7 @@ Index: rp
      set -e"
  }
  
-@@ -198,19 +198,24 @@ exchange() {
+@@ -198,19 +198,25 @@ exchange() {
      fatal "Needs at least one peer specified"
    fi
  
@@ -25,6 +25,7 @@ Index: rp
      # Create the Wireguard interface
 -    ip link add dev $(enquote "${dev}") type wireguard || true"
 +    ifconfig ${wg} create descr $(enquote "${dev}") || true"
++    dev=${wg}
 +  fi
  
    cleanup "
@@ -42,7 +43,7 @@ Index: rp
  
  
    if test -n "${lport}"; then
-@@ -314,8 +319,6 @@ main() {
+@@ -314,8 +320,6 @@ main() {
    project_name="rosenpass"
    verbose=0
    scriptdir="$(dirname "${script}")"
