@@ -6,6 +6,9 @@ GH_TAGNAME =		v0.1.1
 
 CATEGORIES =		net security
 
+HOMEPAGE = 	https://rosenpass.eu/
+MAINTAINER =	Moritz Buhl <mbuhl@openbsd.org>
+
 # MIT/Apache-2.0
 PERMIT_PACKAGE =	Yes
 
@@ -19,7 +22,7 @@ BUILD_DEPENDS =		devel/llvm \
 RUN_DEPENDS =		net/wireguard-tools \
 			shells/bash
 
-MAKE_ENV =		LIBCLANG_PATH="/usr/local/lib/"
+MAKE_ENV =		LIBCLANG_PATH="${LOCALBASE}/lib/"
 
 CONFIGURE_STYLE =	cargo
 

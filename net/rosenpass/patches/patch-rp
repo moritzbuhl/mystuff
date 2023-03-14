@@ -1,3 +1,5 @@
+Make rosenpass work with OpenBSD's ifconfig.
+
 Index: rp
 --- rp.orig
 +++ rp
@@ -6,28 +8,41 @@ Index: rp
    frag_transaction=()
    frag "
 -    #! /bin/bash
-+    #!/usr/local/bin/bash
++    #!/usr/bin/env bash
      set -e"
  }
  
-@@ -200,13 +200,13 @@ exchange() {
+@@ -198,19 +198,24 @@ exchange() {
+     fatal "Needs at least one peer specified"
+   fi
  
-   frag "
+-  frag "
++  wg=$(ifconfig | grep -B 20 $(enquote "${dev}") | grep '^[:space:]' | \
++    cut -d: -f1 | tail -1)
++  if [ -z "${wg}" ]; then
++    wg="wg$(($(ifconfig wg 2>/dev/null | grep ^wg | wc -l)))"
++    frag "
      # Create the Wireguard interface
 -    ip link add dev $(enquote "${dev}") type wireguard || true"
-+    ifconfig wg create name $(enquote "${dev}") || true"
++    ifconfig ${wg} create descr $(enquote "${dev}") || true"
++  fi
  
    cleanup "
 -    ip link del dev $(enquote "${dev}") || true"
-+    ifconfig $(enquote "${dev}") destroy || true"
++    ifconfig ${wg} destroy || true"
  
    frag "
 -    ip link set dev $(enquote "${dev}") up"
-+    ifconfig $(enquote "${dev}") up"
++    ifconfig ${wg} up"
  
    frag "
      # Deploy the classic wireguard private key
-@@ -314,8 +314,6 @@ main() {
+-    wg set $(enquote "${dev}") private-key $(enquote "${skdir}/wgsk")"
++    wg set ${wg} private-key $(enquote "${skdir}/wgsk")"
+ 
+ 
+   if test -n "${lport}"; then
+@@ -314,8 +319,6 @@ main() {
    project_name="rosenpass"
    verbose=0
    scriptdir="$(dirname "${script}")"
