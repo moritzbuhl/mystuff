@@ -1,0 +1,38 @@
+Index: rp
+--- rp.orig
++++ rp
+@@ -67,7 +67,7 @@ frag_init() {
+   explain=0
+   frag_transaction=()
+   frag "
+-    #! /bin/bash
++    #!/usr/local/bin/bash
+     set -e"
+ }
+ 
+@@ -200,13 +200,13 @@ exchange() {
+ 
+   frag "
+     # Create the Wireguard interface
+-    ip link add dev $(enquote "${dev}") type wireguard || true"
++    ifconfig wg create name $(enquote "${dev}") || true"
+ 
+   cleanup "
+-    ip link del dev $(enquote "${dev}") || true"
++    ifconfig $(enquote "${dev}") destroy || true"
+ 
+   frag "
+-    ip link set dev $(enquote "${dev}") up"
++    ifconfig $(enquote "${dev}") up"
+ 
+   frag "
+     # Deploy the classic wireguard private key
+@@ -314,8 +314,6 @@ main() {
+   project_name="rosenpass"
+   verbose=0
+   scriptdir="$(dirname "${script}")"
+-  gitdir="$(git -C "${scriptdir}" rev-parse --show-toplevel 2>/dev/null)" || true
+-  nixdir="$(readlink -f result/bin/rp | grep -Pio '^/nix/store/[^/]+(?=/bin/[^/]+)')" || true
+   binary="$(find_rosenpass_binary)"
+ 
+   # Parse command

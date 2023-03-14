@@ -1,4 +1,4 @@
-COMMENT =		WireGuard based post-quantum-secure VPN
+COMMENT=	Wireguard-based post-quantum VPN
 
 GH_ACCOUNT =		rosenpass
 GH_PROJECT =		rosenpass
@@ -13,15 +13,16 @@ WANTLIB +=		c c++abi pthread
 
 MODULES =		devel/cargo
 BUILD_DEPENDS =		devel/llvm \
+			security/libsodium \
 			security/rust-ring
 
-RUN_DEPENDS =		shells/bash
+RUN_DEPENDS =		net/wireguard-tools \
+			shells/bash
 
 MAKE_ENV =		LIBCLANG_PATH="/usr/local/lib/"
 
 CONFIGURE_STYLE =	cargo
 
-PATCHORIG =		.openbsd.orig
 SEPARATE_BUILD =	Yes
 
 # for riscv64 and powerpc64, please keep: cc >= 1.0.73 and libc >= 0.2.113
