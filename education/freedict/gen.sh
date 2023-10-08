@@ -19,4 +19,6 @@ PERMIT_PACKAGE =	Yes # XXX
 .include <bsd.port.mk>
 EOF
 
+# XXX: write DESCR
+
 done
