@@ -1,12 +1,9 @@
-# XXX: comment lookup in dict
-# XXX: license?
-COMMENT =	free bilingual dictionary
+COMMENT =	English-Irish FreeDict Dictionary ver. 0.3.2
 DICT =	eng-gle
 V =	0.3.2
 
-# GPLv2 or v3 or CC-XYZ or no real license or fuck
-PERMIT_PACKAGE =	Yes # XXX
-#PERMIT_DISTFILES =	Yes | Reason if No
+# GPLv2+
+PERMIT_PACKAGE =	Yes
 
 .include "../Makefile.inc"
 .include <bsd.port.mk>

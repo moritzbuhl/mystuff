@@ -1,0 +1,64 @@
+English-Portuguese FreeDict Dictionary
+
+Maintainer: Raul Fernandes <rgfbr@yahoo.com.br>
+
+Edition: 0.3
+Size: 15766 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+ID# (svn): $Id$
+
+Notes:
+
+ * Database Status: big enough
+
+
+Source(s):
+
+  Home: http://www.travlang.com/ This Database was generated from Ergane.
+  Other contributors: Raul Fernandes <rgf@ieg.com.br> Thanks!
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-12-03 Sebastian Humenda ver. 0.3:
+   * update licencing stanza (thanks to Karl Bartel)
+   * remove duplicated entries
+ * 2010-10-30 Piotr Bański:
+   Conversion of TEI P4 source into P5 via
+   tools/xsl/freedict_P4toP5.xsl; manual clean-up.
+ * 2005-09-07 Raul Fernandes:
+   Added about 3500 entries, fixed missing spaces in translation
+   equivalents
+ * 2005-02-11 Michael Bunk:
+   Converted file to TEI P4
+ * 2000-04-03 Horst Eyermann:
+   Database was converted to TEI format and checked into CVS
+ * 2000-02-01 Horst Eyermann:
+   Database generated from Ergane - Thanks!

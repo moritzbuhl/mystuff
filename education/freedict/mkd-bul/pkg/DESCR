@@ -1,0 +1,55 @@
+Macedonian - Bulgarian FreeDict Dictionary
+
+
+Edition: 0.1.1
+Size: 4546 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) by various authors listed in revisionDesc below.
+    Available under the terms of the GNU General Public License ver. 3.0 or
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 3 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+ID# (svn): $Id$
+
+Notes:
+
+ * Database Status: too small
+
+
+Source(s):
+
+  Derived from the Apertium project: 2010 Tihomir Rangelov
+  <tihomir.rangelov@gmail.com>2010 Francis Tyers <ftyers@prompsit.com>
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project, . This project
+  aims to make many translating dictionaries available for free. Your
+  contributions are welcome!
+
+Changelog:
+
+ * 2017-12-06 Sebastian Humenda ver. 0.1.1:
+   update licencing stanza (thanks to Karl Bartel)
+ * 2011-12-05  ver. 0.1:
+   Version 0.1, 5 December 2011.
+   * Jim O'Regan: finetuning.
+   * Konstantin Stoyanov: conversion for FreeDict.
+   * Tihomir Rangelov and Francis Tyers: the Apertium version, 2010.

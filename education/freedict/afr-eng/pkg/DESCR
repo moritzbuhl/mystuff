@@ -1,0 +1,52 @@
+Afrikaans-English FreeDict Dictionary
+
+Maintainer: [up for grabs]
+
+Edition: 0.2.2
+Size: 5129 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: small
+
+
+Source(s):
+
+  Home: http://freedict.org/ [http://freedict.org/] This Database was
+  generated from ergane, http://www.travlang.com
+  [http://www.travlang.com].
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make available many
+  translating dictionaries for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-11-21 #humenda ver. 0.2.2:
+   * Karl Bartel: Correct licensing information
+   * Sebastian Humenda: Remove duplicated translations
+ * 2010-10-24 Piotr Bański:
+   Conversion of TEI P4 source into P5 via tools/freedict_P4toP5.xsl;
+   manual clean-up. We are back to version from before Michael Bunk's
+   re-import from Ergane of 2006-12-18 that was rolled back due to
+   Ergane's cryptic change of database licensing.
+ * 2005-07-19 Michael Bunk:
+   Fixed Debian Bug#318024 (Africaan -> Afrikaans).
+ * 2005-02-13 Michael Bunk:
+   Converted file to TEI P4 and imported to CVS
+ * 2001-06-07 Horst Eyermann:
+   Database was converted to TEI format

@@ -1,12 +1,9 @@
-# XXX: comment lookup in dict
-# XXX: license?
-COMMENT =	free bilingual dictionary
+COMMENT =	Norwegian Nynorsk-Norwegian Bokmål FreeDict Dictionary ver. 0.1.1
 DICT =	nno-nob
 V =	0.1.1
 
-# GPLv2 or v3 or CC-XYZ or no real license or fuck
-PERMIT_PACKAGE =	Yes # XXX
-#PERMIT_DISTFILES =	Yes | Reason if No
+# GPLv2+
+PERMIT_PACKAGE =	Yes
 
 .include "../Makefile.inc"
 .include <bsd.port.mk>

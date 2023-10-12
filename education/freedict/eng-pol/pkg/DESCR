@@ -1,0 +1,109 @@
+English - Polish Piotrowski+Saloni/FreeDict dictionary
+
+co-author of the original TeX/print version: Tadeusz Piotrowski
+co-author of the original TeX/print version: Zygmunt Saloni
+converted from TeX to SGML by: Katarzyna Głowińska
+converted from TeX to SGML by: Marcin Woliński
+converted from SGML to TEI XML by: Piotr Bański
+Maintainer: Piotr Bański
+
+Edition: 0.2
+Piotr Bański: The first TEI P5 version: converted from an
+               XML-ised SGML version (see changelogs for details).
+
+Size: 16362 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    The FreeDict application is available under the terms of the GNU General
+  Public License, version 3.0 or any later version. In addition, the
+  textual content of the dictionary is licensed under GNU Free
+  Documentation License ver. 1.2 or any later version.
+
+Publication date: 6 May 2009.
+Published at: http://freedict.org/
+ID# (SVN): $Id$
+
+Notes:
+
+ * Database Status: big enough to be useful
+
+
+Source(s):
+
+  The FreeDict dictionary was converted from an SGML version of "Nowy
+  Słownik angielsko-polski" (New English-Polish Dictionary) by Tadeusz
+  Piotrowski and Zygmunt Saloni (1992). Warszawa: Editions Spotkania.
+  ISBN-83-85195-81-5. The dictionary was created in TeX and converted to
+  SGML by Katarzyna Głowińska and Marcin Woliński of the University of
+  Warsaw. Idarex codes were added to it (possibly by Tadeusz Piotrowski
+  and/or his students). The GNU release was facilitated by Janusz S. Bień
+  of the University of Warsaw. The authors' licensing statement is
+  included as PDF in the etc/ directory (the TEI version mentioned there
+  is a different version produced by students of the University of Warsaw;
+  that version was not used in the creation of the FreeDict dictionary).
+  See the revisionDesc and the ChangeLog file for more details. The TeX,
+  SGML and XML-ised SGML versions (the latter accompanied by an XSLT
+  conversion script by Piotr Bański, included for verifiability and
+  reproducibility of the results) are released together with release 0.1
+  of this dictionary.[note: the script appears to have been misplaced or
+  overwritten, it will be added when/if found).
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project. This project aims
+  to make many translating dictionaries available for free. Your
+  contributions are welcome!
+
+Changelog:
+
+ * 2010-05-11 Piotr Bański ver. 0.2:
+   * added more information to the header,
+   * anchored some of the POS values in the FreeDict interface to
+     GOLD/ISO DCR (this is the reason for the version number change),
+   * prepared the representation for the so far non-existent <subc>
+     (subcategorization) fields; for the time being "V Phras", etc. are
+     used as an atomic POS that are aligned with the corresponding simple
+     POS.
+ * 2010-05-06 Piotr Bański ver. 0.1:
+   * converted SGML files to UTF-8;
+   * converted the transcription codes to IPA;
+   * created an XML DTD to validate the dictionary as XML, split all
+     letters into separate files (e.g. "xyz" used to be a single file);
+   * very slightly corrected/modified the post-SGML version (it is
+     released as one of the packages in version 0.1);
+   * converted codes into letters with diacritics in UTF-8;
+   * added non-diacritic versions to headwords with diacritics, to
+     facilitate searches (e.g. pate to pâté; around 40 additions);
+   * the only lexicographic intrusion was splitting protégé/protégée
+     to make them analogical to fiancé/fiancée, to make it easier to
+     process them (note the difference in the POS: protégé/protégée is
+     categorised as Adj, fiancé is N);
+   * wrote a conversion script to TEI XML (included with the
+     post-SGML version as partial documentation);
+   * created this header, xincluding the individual letter files, so
+     that the dictionary is easier to maintain;
+   * there are still a lot of fixes to do -- e.g. add entries missing
+     in the SGML version (e.g. can! etc.) from the TeX version (a list by
+     Radek Moszczyński is provided), fix POS (typo in inter(j), V Refl),
+     unify the idarexen, join equivalents that were split around the '/'
+     (km/h initially ended up as separate strings), split some ambiguous
+     notes (e.g. 'gloss', see the conversion script for comments) into
+     separate subclasses, split some comma-separated variant
+     transcriptions into separate elements; separate regional variants
+     Br/US from e.g. Latin expansions of some abbreviations (cf. cf.),
+     which should not be located by headword queries (in this case, a
+     query for confer);
+   * some entries that were proper subparts of other entries (mostly
+     US spellings) were eliminated from the TEI version (but preserved in
+     the post-SGML XML version) - the full list can be found in the XSLT
+     conversion script;
+   * a separate item is extending the dictionary with an XML
+     representation of idarexen (described in a paper by Bański and
+     Moszczyński, LREC-08);
+   * the companion volume (pol-eng) awaits conversion from the TeX
+     source;

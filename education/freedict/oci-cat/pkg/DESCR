@@ -1,0 +1,52 @@
+Lenga d'òc - Català FreeDict Dictionary
+
+
+Edition: 0.1.1
+Size: 16679 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 2011-2017 by various authors listed in revisionDesc below.
+    Available under the terms of the GNU General Public License ver. 3.0 or
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 3 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: big enough to be useful
+
+
+Source(s):
+
+  Derived from resources of the Apertium project
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project, . This project
+  aims to make many translating dictionaries available for free. Your
+  contributions are welcome!
+
+Changelog:
+
+ * 2017-12-06 Sebastian Humenda ver. 0.1.1:
+   update licencing stanza (thanks to Karl Bartel)
+ * 2011-12-10  ver. 0.1:
+   Version 0.1, 10 December 2011.
+   * Converted from Apertium by someone nice, finetuned by Jim
+     O'Regan.

@@ -1,0 +1,53 @@
+Esperanto-English FreeDict dictionary
+
+created by: Paul Denisowski
+Maintainer: Sebastian Humenda <shumenda at gmx dot de>
+
+Edition: 1.0.1
+Size: 63477 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Available under the terms of the the Creative Commons Attribution 3.0
+  Unported License.
+
+Publication date: 10th of September 2017.
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: big enough to be useful
+
+ * This dictionary has been parsed from a plain text file. Although the
+   parser attempts to be clever, it might well be that certain text
+   fragments are categorized as grammatical information, or vice versa.
+   Please report these issues to the maintainer or to the FreeDict
+   project.The original dictionary has been changed at a few places. These
+   changes are mostly to make the dictionary better parseable.
+
+
+Source(s):
+
+  The dictionary was downloaded from
+  http://www.denisowski.org/Esperanto/ESPDIC/espdic_readme.htm
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://www.freedict.org. This project aims to make many translating
+  dictionaries available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-09-10 Sebastian Humenda <shumenda at gmx dot de> ver. 1.0.1:
+   The importer script omitted characters at the beginning of words, if
+   a headword started with "to". The newly imported versions has fixed
+   this bug.
+ * 2017-07-09 Sebastian Humenda <shumenda at gmx dot de> ver. 1.0:
+   Initial conversion of the dictionary. At the moment, the dictionary
+   needs a bit of patching to be transformed correctly. When there's
+   enough interest, that might hchange.

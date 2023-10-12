@@ -1,0 +1,61 @@
+English-Turkish FreeDict Dictionary
+
+converted by: Michael Bunk <michael.bunk@gmail.com>
+Maintainer: [up for grabs]
+
+Edition: 0.3
+Size: 36589 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Publication date: Dec 3, 2017.
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: unstable
+
+
+Source(s):
+
+  Home: http://www.linuxprogramlama.com/index.php?sayfa=gtksozluk2.htm
+  This file was converted from another electronic document.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-12-03 Sebastian Humenda ver. 0.3:
+   * update licencing stanza (thanks to Karl Bartel)
+   * remove duplicated entries
+ * 2017-10-13 Sebastian Humenda:
+   Valentino (GitHub) fixed some parsing errors in a few entries.
+ * 2010-11-04 Piotr Bański:
+   Conversion of TEI P4 source into P5 via
+   tools/xsl/freedict_P4toP5.xsl (revision 1005); manual clean-up. Please
+   consult the README file: some equivalents here are not split correctly.
+ * 2007-02-13 Michael Bunk:
+   Enabled phonetics import

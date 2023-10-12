@@ -1,0 +1,62 @@
+English-Arabic FreeDict Dictionary
+
+by: Arabeyes.org
+Maintainer: [up for grabs]
+
+Edition: 0.6.3
+Size: 87424 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: stable
+
+
+Source(s):
+
+  Home: http://www.arabeyes.org/project.php?proj=Wordlist -*
+  www.Arabeyes.org *- If you'd like to help the Arabeyes Project, then
+  consider: http://www.arabeyes.org/donate.php
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-11-29 Sebastian Humenda ver. 0.6.3:
+   * change licencing information
+   * remove duplicated entries
+ * 2014-02-17 Nikolay Shaplov:
+   One-line encoded xml converted into an indented one.
+ * 2010-10-29 Piotr Bański:
+   Conversion of TEI P4 source into P5 via tools/freedict_P4toP5.xsl;
+   manual clean-up.
+ * 2008-05-30 Kęstutis Biliūnas:
+   Updated to version 0.6.1 from Arabeyes.org.
+ * 2007-02-10 Michael Bunk:
+   Enabled phonetics.

@@ -1,0 +1,51 @@
+Spanish-German FreeDict Dictionary
+
+Maintainer: Sebastian Humenda
+
+Edition: 0.1
+Size: 21353 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    2003-2012 — Zeno Gantner, Matthias Buchmeier and others
+    Available under the terms of the GNU General Public License ver. 2 (or
+  at your option any later version, published by the FSF).
+    Additionally, it may be also used under the following licenses: GNU Free
+  Documentation License (V1.2 or later) or the Creative Commons
+  Attribution-ShareAlike License, (Version 1.0).
+    This dictionary is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the individual
+  license text for details.
+
+Published at: http://freedict.org/
+
+Series: free dictionaries
+
+Notes:
+
+ * Database Status: big enough to be useful
+
+ * automated, unchanged upstream import
+
+
+Source(s):
+
+  Home: http://savannah.nongnu.org/projects/ding-es-de . The dictionary
+  was auto-imported using the FreeDict ding2tei script and left unmodified
+  otherwise.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/ . This project aims to make translating
+  dictionaries available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-08-14 Sebastian Humenda:
+   Initial import.

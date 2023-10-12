@@ -1,0 +1,65 @@
+English-Romanian FreeDict Dictionary
+
+by: Pauliuc George <pauliuc@gmx.net>
+Maintainer: [up for grabs]
+
+Edition: 0.6.3
+Size: 990 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 2002 Pauliuc George <pauliuc@gmx.net> (c) 2017-2018
+  FreeDict Project
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+ID# (svn): $Id$
+
+Notes:
+
+ * Database Status: too small
+
+
+Source(s):
+
+  Home: http://romdict.sourceforge.net/ This Database was imported from
+  the RomDict project.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2018-08-04 Sebastian Humenda ver. 0.6.3:
+   Sebastian Humenda
+   remove duplicated entries
+ * 2017-12-03 Sebastian Humenda ver. 0.6.2:
+   Update licencing stanza
+ * 2010-11-04 Piotr Bański:
+   Conversion of TEI P4 source into P5 via
+   tools/xsl/freedict_P4toP5.xsl; manual clean-up.
+ * 2007-02-13 Michael Bunk:
+   Enabled phonetics import
+ * 2005-02-11 Michael Bunk:
+   Converted file to TEI P4 and imported to CVS
+ * 2002-10-27 Horst Eyermann:
+   Database was converted to TEI format

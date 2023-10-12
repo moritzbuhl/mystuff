@@ -1,12 +1,9 @@
-# XXX: comment lookup in dict
-# XXX: license?
-COMMENT =	free bilingual dictionary
+COMMENT =	Japanese-German FreeDict Dictionary ver. 0.2.0
 DICT =	jpn-deu
 V =	0.2.0
 
-# GPLv2 or v3 or CC-XYZ or no real license or fuck
-PERMIT_PACKAGE =	Yes # XXX
-#PERMIT_DISTFILES =	Yes | Reason if No
+# Creative Commons Attribution-ShareAlike 3.0
+PERMIT_PACKAGE =	Yes
 
 .include "../Makefile.inc"
 .include <bsd.port.mk>

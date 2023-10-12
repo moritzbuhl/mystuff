@@ -1,0 +1,68 @@
+Serbian - English FreeDict Dictionary
+
+Maintainer: [up for grabs]
+
+Edition: 0.2
+Size: 395 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+ID# (svn): $Id$
+
+Notes:
+
+ * Database Status: too small
+
+
+Source(s):
+
+  Home: http://www.travlang.com/ This Database was generated from Ergane.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-12-09 Sebastian Humenda ver. 0.2:
+   * update licencing stanza (thanks to Karl Bartel)
+   * remove duplicated entries
+ * 2010-12-09 Piotr Bański:
+   Added @xml:lang attributes and profileDesc/langUsage.
+ * 2010-12-01 Piotr Bański:
+   Database name changed to srp-eng, as the content was confirmed to be
+   Serbian with some dialectal Montenegrin additions (many thanks to Dr.
+   Jerzy Molas of the University of Warsaw for his input). TODO: mark the
+   dialectal additions with the appropriate <usg> notes.
+ * 2010-11-01 Piotr Bański:
+   Conversion of TEI P4 source into P5 via
+   tools/xsl/freedict_P4toP5.xsl; manual clean-up.
+ * 2005-02-12 Michael Bunk:
+   Converted file to TEI P4
+ * 2000-04-30 Horst Eyermann:
+   Database was converted to TEI format and checked into CVS
+ * 2000-01-01 Horst Eyermann:
+   This Database was generated from ergane, http://www.travlang.com -
+   Thanks!

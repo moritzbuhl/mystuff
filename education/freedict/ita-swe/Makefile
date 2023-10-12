@@ -1,12 +1,9 @@
-# XXX: comment lookup in dict
-# XXX: license?
-COMMENT =	free bilingual dictionary
+COMMENT =	italiano-Svenska FreeDict+WikDict dictionary ver. 2022.11.18
 DICT =	ita-swe
 V =	2022.11.18
 
-# GPLv2 or v3 or CC-XYZ or no real license or fuck
-PERMIT_PACKAGE =	Yes # XXX
-#PERMIT_DISTFILES =	Yes | Reason if No
+# Creative Commons Attribution-ShareAlike 3.0
+PERMIT_PACKAGE =	Yes
 
 .include "../Makefile.inc"
 .include <bsd.port.mk>

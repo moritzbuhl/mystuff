@@ -1,0 +1,62 @@
+Kurdish-Turkish Ferheng/FreeDict Dictionary
+
+Author: Erdal Ronahi <erdal.ronahi@gmail.com>
+Maintainer: Erdal Ronahi <erdal.ronahi@gmail.com>
+converted into TEI: Erdal Ronahi <erdal.ronahi@gmail.com>
+
+Edition: 0.1.2
+Size: 24377 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 1999-2017 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 2.0 and
+  any later version.
+    This program is free software; you can redistribute it and/or modify it
+  under the terms of the GNU General Public License as published by the
+  Free Software Foundation; either version 2 of the License, or (at your
+  option) any later version.
+    This program is distributed in the hope that it will be useful, but
+  WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+  Public License for more details.
+    You should have received a copy of the GNU General Public License along
+  with this program; if not, write to the Free Software Foundation, Inc.,
+  59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+Published at: http://freedict.org/
+ID# (svn): $Id$
+
+Series: free dictionaries
+
+Notes:
+
+ * Database Status: stable
+
+
+Source(s):
+
+  Home: http://ferheng.org/ This file was converted from another
+  electronic document.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-12-06 Sebastian Humenda ver. 0.1.2:
+   update licencing stanza (thanks to Karl Bartel)
+ * 2010-11-04 Piotr Bański:
+   Conversion of TEI P4 source into P5 via
+   tools/xsl/freedict_P4toP5.xsl; manual clean-up. There are some brackets
+   to be converted to separate elements.
+ * 2005-08-01 Michael Bunk:
+   Imported this dictionary version 2005-07-29 into FreeDict by
+   creating the initial Makefile.

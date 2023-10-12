@@ -1,14 +1,9 @@
-# XXX: comment lookup in dict
-# XXX: license?
-COMMENT =	free bilingual dictionary
+COMMENT =	English - German Ding/FreeDict dictionary ver. 1.9-fd1
 DICT =	eng-deu
 V =	1.9-fd1
 
-PKGNAME = freedict-${DICT}-${V:S/-fd1//}.dictd
-
-# GPLv2 or v3 or CC-XYZ or no real license or fuck
-PERMIT_PACKAGE =	Yes # XXX
-#PERMIT_DISTFILES =	Yes | Reason if No
+# GPLv3 and AGPLv3
+PERMIT_PACKAGE =	Yes
 
 .include "../Makefile.inc"
 .include <bsd.port.mk>

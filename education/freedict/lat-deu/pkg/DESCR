@@ -1,0 +1,109 @@
+Lateinisch-Deutsch FreeDict-Wörterbuch
+
+created by: Sebastian Humenda <shumenda |at| gmx |dot| de>
+Maintainer: Sebastian Humenda <shumenda |at| gmx |dot| de>
+
+Edition: 1.0.3
+Size: 5500 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    © 2009-2017 Sebastian Humenda
+    Available under the terms of the GNU General Public License ver. 3 (or
+  at your option any later version, published by the FSF).
+
+Publication date: Nov 18, 2017.
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: small
+
+ * Anmerkungen zum Wörterbuch (English version below): Verben mit
+   regelmäßiger A-Konjugation sind nur in der Infinitivform und in der
+   ersten Person aufgeführt. Das Indexwort eines Verbes ist die erste
+   Person Singular, die anderen Formen werden aber auch aufgeführt; für
+   einige Verben musste hierfür eine Ausnahme gemacht werden.
+   Übersetzungen werden häufig nur in ihrer maskulinen Form aufgeführt,
+   auch wenn die anderen Formen existieren. Phrasen die aus zwei
+   Satzteilen bestehen, sind mit einem "..." verbunden.
+
+ * Please note: Verbs with the regular 'a' conjugation are only listed in
+   their infinitive and first person form. The headword of a verb is the
+   first-person form, but you find the other forms as well; some
+   exceptions have been made for verbs which only exist in the third
+   person. Translations are often only listed in their masculine form,
+   even though they exist in the feminine and neuter form as well. phrases
+   consisting of two parts are connected with " .. ".
+
+
+Source(s):
+
+  Created from scratch (from Sebastian Humenda's notes); validation of
+  some entries using http://auxilium-online.net and
+  http://en.wiktionary.org.
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://www.freedict.org. This project aims to make many translating
+  dictionaries available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2017-11-18 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 1.0.3:
+   * correct various minor issues
+   * remove empty XML nodes
+   * add word(s)
+   * improve licencing stanza
+ * 2017-11-06 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 1.0.2:
+   Fix some gender and POS issues, remove duplicated translations.
+ * 2017-10-27 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 1.0.1:
+   * fix spacing issues
+   * strip unwanted words from the untransformed source, improve
+     markup
+ * 2017-08-23 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 1.0:
+   * added remaining words from word list
+   * add particles like -ne or -ve
+   * Improve TEI markup
+ * 2011-02-03 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.4:
+   * added more words; now 4500 headwords
+ * 2010-11-27 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.3.1:
+   * fixed a minor bug, added a few words
+   * pushed in an important feature I forgot (list inflections at the
+     verb's head form)
+ * 2010-11-24 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.3:
+   * extended database to 35xx words
+   * added Latin special cases; that are verbs only available in 3rd
+     person
+   * changed the supine form of all verbs from .*us to .*um
+   * notes are now noted correctly in TEi xML
+   * senses (translations) are now splitted, only translations
+     related to each other are on one line
+   * also some bugfixes.
+ * 2010-04-07 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.2.3:
+   * introduced pronomes, numerals, prepositions and conjungtions
+   * added words, fixed words (now 1800)
+   * increased complexity, mainly on verbs
+ * 2010-03-01 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.2.2:
+   * Fixed bug with doubled id's: auto-generated id's now take as
+     much from the headword (genitivie form, gender, etc.) as possible
+   * Deleted some doubled words, checked others twice
+   * Added a few new words for a new version
+ * 2010-02-25 #bansp ver. 0.2.1:
+   Started fixing it the same way I did the previous version, but gave
+   up - there are too many entries with the same IDs (42 remain, I removed
+   or merged a few); changed @id to @xml:id, removed commas from IDs,
+   removed null-string IDs, touched the header in a few places.
+ * 2010-02-24 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.2.1:
+   * roughly about 1120 words
+   * now also adverbs and phrases added
+ * 2010-01-07 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.1.2:
+   * 500 Headwords: adjectives, nouns and verbs
+   * First "usable" database, but still extremely small
+ * 2009-12-20 Sebastian Humenda <shumenda |at| gmx |dot| de> ver. 0.1:
+   * 200 words written. Main goal was to get used to TEI XML.

@@ -1,0 +1,43 @@
+English-Danish FreeDict Dictionary
+
+Maintainer: Joe Hansen
+
+Edition: 0.1.0
+Size: 411 headwords
+
+Publisher: FreeDict.
+
+
+Availability:
+
+    Copyright (C) 2019 by various authors listed below.
+    Available under the terms of the GNU General Public License ver. 3.0 and
+  any later version and Text of Creative Commons Attribution-ShareAlike
+  3.0 Unported License and any later version (dual license).
+
+Published at: http://freedict.org/
+
+Notes:
+
+ * Database Status: too small
+
+
+Source(s):
+
+  Home: http://freedict.org/ [http://freedict.org/] This Database was
+  generated from text translations done by the maintainer. Please send
+  corrections to freedict
+  (https://github.com/freedict/fd-dictionaries/issues) or directly to
+  joedalton2@yahoo.dk
+
+The Project:
+
+  This dictionary comes to you through nice people making it available for
+  free and for good. It is part of the FreeDict project,
+  http://freedict.org/. This project aims to make translating dictionaries
+  available for free. Your contributions are welcome!
+
+Changelog:
+
+ * 2019-04-10 Joe Hansen ver. 0.1.0:
+   Startup with a few words from English articles and word games
