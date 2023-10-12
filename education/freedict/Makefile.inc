@@ -1,5 +1,3 @@
-COMMENT =	comprehensive source of truly free bilingual dictionaries
-
 # See https://freedict.org/freedict-database.xml for all dictionaries
 DISTNAME =	freedict-${DICT}-${V}.dictd
 
