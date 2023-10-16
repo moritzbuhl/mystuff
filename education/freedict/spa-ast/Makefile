@@ -5,5 +5,4 @@ V =	0.1.1
 # GPLv3+
 PERMIT_PACKAGE =	Yes
 
-.include "../Makefile.inc"
 .include <bsd.port.mk>

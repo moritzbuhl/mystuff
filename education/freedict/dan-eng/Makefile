@@ -5,5 +5,4 @@ V =	0.3.1
 # GPLv3+ and partially Creative Commons Attribution-ShareAlike 3.0
 PERMIT_PACKAGE =	Yes
 
-.include "../Makefile.inc"
 .include <bsd.port.mk>
