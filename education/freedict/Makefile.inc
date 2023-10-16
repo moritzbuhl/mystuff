@@ -1,5 +1,6 @@
 # See https://freedict.org/freedict-database.xml for all dictionaries
 DISTNAME =	freedict-${DICT}-${V}.dictd
+PKGNAME?=	${DISTNAME:.dictd=}
 
 CATEGORIES =	education databases
 
