@@ -1,4 +1,4 @@
-COMMENT =	Scottish Gaelic-German FreeDict Dictionary
+COMMENT =	Gaelic-German FreeDict Dictionary
 DICT =	gla-deu
 V =	0.2.1
 

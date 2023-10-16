@@ -1,4 +1,4 @@
-COMMENT =	Svenska-Nederlands FreeDict+WikDict dictionary
+COMMENT =	Swedish-Dutch FreeDict+WikDict Dictionary
 DICT =	swe-nld
 V =	2022.11.18
 

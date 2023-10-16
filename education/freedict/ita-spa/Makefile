@@ -1,4 +1,4 @@
-COMMENT =	italiano-español FreeDict+WikDict dictionary
+COMMENT =	Italian-Spanish FreeDict+WikDict Dictionary
 DICT =	ita-spa
 V =	2022.11.18
 

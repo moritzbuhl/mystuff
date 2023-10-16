@@ -1,4 +1,4 @@
-COMMENT =	suomi-português FreeDict+WikDict dictionary
+COMMENT =	Finnish-Portuguese FreeDict+WikDict Dictionary
 DICT =	fin-por
 V =	2022.11.18
 

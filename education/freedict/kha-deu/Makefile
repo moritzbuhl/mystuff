@@ -1,4 +1,4 @@
-COMMENT =	Khasi - German FreeDict Dictionary
+COMMENT =	Khasi-German FreeDict Dictionary
 DICT =	kha-deu
 V =	0.1.4
 

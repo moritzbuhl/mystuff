@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-Svenska FreeDict+WikDict dictionary
+COMMENT =	Greek-Swedish FreeDict+WikDict Dictionary
 DICT =	ell-swe
 V =	2022.11.18
 

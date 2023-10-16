@@ -1,4 +1,4 @@
-COMMENT =	English - Polish Piotrowski+Saloni/FreeDict dictionary
+COMMENT =	English-Polish Piotrowski+Saloni/FreeDict Dictionary
 DICT =	eng-pol
 V =	0.2
 

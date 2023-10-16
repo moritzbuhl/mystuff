@@ -1,4 +1,4 @@
-COMMENT =	Lenga d'òc - Català FreeDict Dictionary
+COMMENT =	Occitan-Catalan FreeDict Dictionary
 DICT =	oci-cat
 V =	0.1.1
 

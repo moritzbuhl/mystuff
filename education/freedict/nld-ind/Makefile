@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-Bahasa Indonesia FreeDict+WikDict dictionary
+COMMENT =	Dutch-Indonesian FreeDict+WikDict Dictionary
 DICT =	nld-ind
 V =	2022.04.06
 

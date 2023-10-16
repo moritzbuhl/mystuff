@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-język polski FreeDict+WikDict dictionary
+COMMENT =	Greek-Polish FreeDict+WikDict Dictionary
 DICT =	ell-pol
 V =	2022.11.18
 

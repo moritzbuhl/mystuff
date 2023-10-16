@@ -1,4 +1,4 @@
-COMMENT =	français-język polski FreeDict+WikDict dictionary
+COMMENT =	French-Polish FreeDict+WikDict Dictionary
 DICT =	fra-pol
 V =	2022.11.18
 

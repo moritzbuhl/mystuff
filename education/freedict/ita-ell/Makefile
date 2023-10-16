@@ -1,4 +1,4 @@
-COMMENT =	italiano-ελληνικά FreeDict+WikDict dictionary
+COMMENT =	Italian-Greek FreeDict+WikDict Dictionary
 DICT =	ita-ell
 V =	2022.11.18
 

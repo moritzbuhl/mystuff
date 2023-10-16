@@ -1,4 +1,4 @@
-COMMENT =	suomi-français FreeDict+WikDict dictionary
+COMMENT =	Finnish-French FreeDict+WikDict Dictionary
 DICT =	fin-fra
 V =	2022.11.18
 

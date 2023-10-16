@@ -1,4 +1,4 @@
-COMMENT =	Deutsch-español FreeDict+WikDict dictionary
+COMMENT =	German-Spanish FreeDict+WikDict Dictionary
 DICT =	deu-spa
 V =	2022.11.18
 

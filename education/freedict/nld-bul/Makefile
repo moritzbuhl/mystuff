@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-български език FreeDict+WikDict dictionary
+COMMENT =	Dutch-Bulgarian FreeDict+WikDict Dictionary
 DICT =	nld-bul
 V =	2022.11.18
 

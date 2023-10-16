@@ -1,4 +1,4 @@
-COMMENT =	français-italiano FreeDict+WikDict dictionary
+COMMENT =	French-Italian FreeDict+WikDict Dictionary
 DICT =	fra-ita
 V =	2022.11.18
 

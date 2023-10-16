@@ -1,4 +1,4 @@
-COMMENT =	Macedonian - Bulgarian FreeDict Dictionary
+COMMENT =	Macedonian-Bulgarian FreeDict Dictionary
 DICT =	mkd-bul
 V =	0.1.1
 

@@ -1,4 +1,4 @@
-COMMENT =	English-български език FreeDict+WikDict dictionary
+COMMENT =	English-Bulgarian FreeDict+WikDict Dictionary
 DICT =	eng-bul
 V =	2022.11.18
 

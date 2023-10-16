@@ -1,4 +1,4 @@
-COMMENT =	italiano-lietuvių kalba FreeDict+WikDict dictionary
+COMMENT =	Italian-Lithuanian FreeDict+WikDict Dictionary
 DICT =	ita-lit
 V =	2022.11.18
 

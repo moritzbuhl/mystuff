@@ -1,4 +1,4 @@
-COMMENT =	Svenska-Deutsch FreeDict+WikDict dictionary
+COMMENT =	Swedish-German FreeDict+WikDict Dictionary
 DICT =	swe-deu
 V =	2022.11.18
 

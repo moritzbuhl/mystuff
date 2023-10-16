@@ -1,4 +1,4 @@
-COMMENT =	français-português FreeDict+WikDict dictionary
+COMMENT =	French-Portuguese FreeDict+WikDict Dictionary
 DICT =	fra-por
 V =	2022.11.18
 

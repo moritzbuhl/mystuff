@@ -1,4 +1,4 @@
-COMMENT =	Deutsch-ελληνικά FreeDict+WikDict dictionary
+COMMENT =	German-Greek FreeDict+WikDict Dictionary
 DICT =	deu-ell
 V =	2022.11.18
 

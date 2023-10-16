@@ -1,4 +1,4 @@
-COMMENT =	Svenska-български език FreeDict+WikDict dictionary
+COMMENT =	Swedish-Bulgarian FreeDict+WikDict Dictionary
 DICT =	swe-bul
 V =	2022.11.18
 

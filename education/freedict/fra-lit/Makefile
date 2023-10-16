@@ -1,4 +1,4 @@
-COMMENT =	français-lietuvių kalba FreeDict+WikDict dictionary
+COMMENT =	French-Lithuanian FreeDict+WikDict Dictionary
 DICT =	fra-lit
 V =	2022.11.18
 

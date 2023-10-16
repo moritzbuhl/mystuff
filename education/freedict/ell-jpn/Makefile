@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-日本語 (にほんご) FreeDict+WikDict dictionary
+COMMENT =	Greek-Japanese FreeDict+WikDict Dictionary
 DICT =	ell-jpn
 V =	2022.11.18
 

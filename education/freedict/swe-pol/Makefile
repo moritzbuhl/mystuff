@@ -1,4 +1,4 @@
-COMMENT =	Svenska-język polski FreeDict+WikDict dictionary
+COMMENT =	Swedish-Polish FreeDict+WikDict Dictionary
 DICT =	swe-pol
 V =	2022.11.18
 

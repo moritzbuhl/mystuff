@@ -1,4 +1,4 @@
-COMMENT =	język polski-日本語 (にほんご) FreeDict+WikDict dictionary
+COMMENT =	Polish-Japanese FreeDict+WikDict Dictionary
 DICT =	pol-jpn
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	français-latine FreeDict+WikDict dictionary
+COMMENT =	French-Latin FreeDict+WikDict Dictionary
 DICT =	fra-lat
 V =	2020.10.04
 

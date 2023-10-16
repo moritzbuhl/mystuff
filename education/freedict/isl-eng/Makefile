@@ -1,4 +1,4 @@
-COMMENT =	íslenska - English FreeDict Dictionary
+COMMENT =	Islandic-English FreeDict Dictionary
 DICT =	isl-eng
 V =	0.1.1
 

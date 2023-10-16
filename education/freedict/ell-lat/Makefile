@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-latine FreeDict+WikDict dictionary
+COMMENT =	Greek-Latin FreeDict+WikDict Dictionary
 DICT =	ell-lat
 V =	2022.04.06
 

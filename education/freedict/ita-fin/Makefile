@@ -1,4 +1,4 @@
-COMMENT =	italiano-suomi FreeDict+WikDict dictionary
+COMMENT =	Italian-Finnish FreeDict+WikDict Dictionary
 DICT =	ita-fin
 V =	2022.11.18
 

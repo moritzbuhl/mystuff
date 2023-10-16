@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-Nederlands FreeDict+WikDict dictionary
+COMMENT =	Greek-Dutch FreeDict+WikDict Dictionary
 DICT =	ell-nld
 V =	2022.11.18
 

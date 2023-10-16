@@ -1,4 +1,4 @@
-COMMENT =	suomi-Bahasa Indonesia FreeDict+WikDict dictionary
+COMMENT =	Finnish-Indonesian FreeDict+WikDict Dictionary
 DICT =	fin-ind
 V =	2022.11.18
 

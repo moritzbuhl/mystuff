@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-Русский FreeDict+WikDict dictionary
+COMMENT =	Dutch-Russian FreeDict+WikDict Dictionary
 DICT =	nld-rus
 V =	2022.11.18
 

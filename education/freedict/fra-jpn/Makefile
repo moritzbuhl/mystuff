@@ -1,4 +1,4 @@
-COMMENT =	français-日本語 (にほんご) FreeDict+WikDict dictionary
+COMMENT =	French-Japanese FreeDict+WikDict Dictionary
 DICT =	fra-jpn
 V =	2022.11.18
 

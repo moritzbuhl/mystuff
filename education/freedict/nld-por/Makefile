@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-português FreeDict+WikDict dictionary
+COMMENT =	Dutch-Portuguese FreeDict+WikDict Dictionary
 DICT =	nld-por
 V =	2022.11.18
 

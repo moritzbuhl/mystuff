@@ -1,4 +1,4 @@
-COMMENT =	język polski-български език FreeDict+WikDict dictionary
+COMMENT =	Polish-Bulgarian FreeDict+WikDict Dictionary
 DICT =	pol-bul
 V =	2022.11.18
 

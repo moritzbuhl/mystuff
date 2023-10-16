@@ -1,4 +1,4 @@
-COMMENT =	Eurfa Cymraeg, Welsh-English Eurfa/Freedict dictionary
+COMMENT =	Welsh-English Eurfa/Freedict Dictionary
 DICT =	cym-eng
 V =	0.2.3
 

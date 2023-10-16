@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-español FreeDict+WikDict dictionary
+COMMENT =	Dutch-Spanish FreeDict+WikDict Dictionary
 DICT =	nld-spa
 V =	2022.11.18
 

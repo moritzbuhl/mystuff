@@ -1,4 +1,4 @@
-COMMENT =	italiano-Bahasa Indonesia FreeDict+WikDict dictionary
+COMMENT =	Italian-Indonesian FreeDict+WikDict Dictionary
 DICT =	ita-ind
 V =	2022.11.18
 

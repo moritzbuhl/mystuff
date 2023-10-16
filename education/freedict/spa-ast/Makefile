@@ -1,4 +1,4 @@
-COMMENT =	Spanish - Asturian FreeDict Dictionary
+COMMENT =	Spanish-Asturian FreeDict Dictionary
 DICT =	spa-ast
 V =	0.1.1
 

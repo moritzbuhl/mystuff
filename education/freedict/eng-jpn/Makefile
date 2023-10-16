@@ -1,4 +1,4 @@
-COMMENT =	English-日本語 (にほんご) FreeDict+WikDict dictionary
+COMMENT =	English-Japanese FreeDict+WikDict Dictionary
 DICT =	eng-jpn
 V =	2022.11.18
 

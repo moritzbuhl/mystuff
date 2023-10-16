@@ -1,4 +1,4 @@
-COMMENT =	suomi-Norsk FreeDict+WikDict dictionary
+COMMENT =	Finnish-Norwegian FreeDict+WikDict Dictionary
 DICT =	fin-nor
 V =	2022.11.18
 

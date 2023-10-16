@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-lietuvių kalba FreeDict+WikDict dictionary
+COMMENT =	Greek-Lithuanian FreeDict+WikDict Dictionary
 DICT =	ell-lit
 V =	2022.11.18
 

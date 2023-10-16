@@ -1,4 +1,4 @@
-COMMENT =	suomi-Deutsch FreeDict+WikDict dictionary
+COMMENT =	Finnish-German FreeDict+WikDict Dictionary
 DICT =	fin-deu
 V =	2022.11.18
 

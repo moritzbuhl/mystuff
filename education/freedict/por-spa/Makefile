@@ -1,4 +1,4 @@
-COMMENT =	português-español FreeDict+WikDict dictionary
+COMMENT =	Portuguese-Spanish FreeDict+WikDict Dictionary
 DICT =	por-spa
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	język polski-Norsk FreeDict+WikDict dictionary
+COMMENT =	Polish-Norwegian FreeDict+WikDict Dictionary
 DICT =	pol-nor
 V =	2022.11.18
 

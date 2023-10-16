@@ -1,4 +1,4 @@
-COMMENT =	język polski-português FreeDict+WikDict dictionary
+COMMENT =	Polish-Portuguese FreeDict+WikDict Dictionary
 DICT =	pol-por
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	suomi-български език FreeDict+WikDict dictionary
+COMMENT =	Finnish-Bulgarian FreeDict+WikDict Dictionary
 DICT =	fin-bul
 V =	2022.11.18
 

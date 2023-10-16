@@ -1,4 +1,4 @@
-COMMENT =	Deutsch-Русский FreeDict+WikDict dictionary
+COMMENT =	German-Russian FreeDict+WikDict Dictionary
 DICT =	deu-rus
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	język polski-Svenska FreeDict+WikDict dictionary
+COMMENT =	Polish-Swedish FreeDict+WikDict Dictionary
 DICT =	pol-swe
 V =	2022.11.18
 

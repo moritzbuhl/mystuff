@@ -1,4 +1,4 @@
-COMMENT =	français-Türkçe FreeDict+WikDict dictionary
+COMMENT =	French-Turkish FreeDict+WikDict Dictionary
 DICT =	fra-tur
 V =	2018.09.13
 

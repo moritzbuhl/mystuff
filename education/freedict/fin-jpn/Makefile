@@ -1,4 +1,4 @@
-COMMENT =	suomi-日本語 (にほんご) FreeDict+WikDict dictionary
+COMMENT =	Finnish-Japanese FreeDict+WikDict Dictionary
 DICT =	fin-jpn
 V =	2022.11.18
 

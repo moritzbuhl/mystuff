@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-suomi FreeDict+WikDict dictionary
+COMMENT =	Greek-Finnish FreeDict+WikDict Dictionary
 DICT =	ell-fin
 V =	2022.11.18
 

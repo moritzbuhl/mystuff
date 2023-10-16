@@ -1,4 +1,4 @@
-COMMENT =	français-български език FreeDict+WikDict dictionary
+COMMENT =	French-Bulgarian FreeDict+WikDict Dictionary
 DICT =	fra-bul
 V =	2022.11.18
 

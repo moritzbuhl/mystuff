@@ -1,4 +1,4 @@
-COMMENT =	Esperanto-English FreeDict dictionary
+COMMENT =	Esperanto-English FreeDict Dictionary
 DICT =	epo-eng
 V =	1.0.1
 

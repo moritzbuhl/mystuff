@@ -1,4 +1,4 @@
-COMMENT =	suomi-język polski FreeDict+WikDict dictionary
+COMMENT =	Finnish-Polish FreeDict+WikDict Dictionary
 DICT =	fin-pol
 V =	2022.11.18
 

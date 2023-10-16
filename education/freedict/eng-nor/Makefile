@@ -1,4 +1,4 @@
-COMMENT =	English-Norsk FreeDict+WikDict dictionary
+COMMENT =	English-Norwegian FreeDict+WikDict Dictionary
 DICT =	eng-nor
 V =	2022.11.18
 

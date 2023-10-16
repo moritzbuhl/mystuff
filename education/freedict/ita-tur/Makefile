@@ -1,4 +1,4 @@
-COMMENT =	italiano-Türkçe FreeDict+WikDict dictionary
+COMMENT =	Italian-Turkish FreeDict+WikDict Dictionary
 DICT =	ita-tur
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	français-suomi FreeDict+WikDict dictionary
+COMMENT =	French-Finnish FreeDict+WikDict Dictionary
 DICT =	fra-fin
 V =	2022.11.18
 

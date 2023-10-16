@@ -1,4 +1,4 @@
-COMMENT =	italiano-Norsk FreeDict+WikDict dictionary
+COMMENT =	Italian-Norwegian FreeDict+WikDict Dictionary
 DICT =	ita-nor
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	Eurfa Saesneg, English-Welsh Eurfa/Freedict dictionary
+COMMENT =	English-Welsh Eurfa/Freedict Dictionary
 DICT =	eng-cym
 V =	0.2.3
 

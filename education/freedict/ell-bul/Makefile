@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-български език FreeDict+WikDict dictionary
+COMMENT =	Greek-Bulgarian FreeDict+WikDict Dictionary
 DICT =	ell-bul
 V =	2022.11.18
 
