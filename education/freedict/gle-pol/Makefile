@@ -1,4 +1,4 @@
-COMMENT =	Irish-Polish FreeDict Dictionary ver. 0.1.2
+COMMENT =	Irish-Polish FreeDict Dictionary
 DICT =	gle-pol
 V =	0.1.2
 

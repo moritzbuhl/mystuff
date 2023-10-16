@@ -1,4 +1,4 @@
-COMMENT =	German-Dutch FreeDict Dictionary ver. 0.1.5
+COMMENT =	German-Dutch FreeDict Dictionary
 DICT =	deu-nld
 V =	0.1.5
 

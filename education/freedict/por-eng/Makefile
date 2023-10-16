@@ -1,4 +1,4 @@
-COMMENT =	Portuguese-English FreeDict Dictionary ver. 0.2
+COMMENT =	Portuguese-English FreeDict Dictionary
 DICT =	por-eng
 V =	0.2
 

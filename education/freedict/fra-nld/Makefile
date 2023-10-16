@@ -1,4 +1,4 @@
-COMMENT =	French-Dutch FreeDict Dictionary ver. 0.2
+COMMENT =	French-Dutch FreeDict Dictionary
 DICT =	fra-nld
 V =	0.2
 

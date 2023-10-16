@@ -1,4 +1,4 @@
-COMMENT =	italiano-język polski FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	italiano-język polski FreeDict+WikDict dictionary
 DICT =	ita-pol
 V =	2022.11.18
 

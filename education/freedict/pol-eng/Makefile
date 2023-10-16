@@ -1,4 +1,4 @@
-COMMENT =	język polski-English FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-English FreeDict+WikDict dictionary
 DICT =	pol-eng
 V =	2022.11.18
 

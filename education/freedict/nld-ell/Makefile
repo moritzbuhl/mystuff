@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-ελληνικά FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Nederlands-ελληνικά FreeDict+WikDict dictionary
 DICT =	nld-ell
 V =	2022.11.18
 

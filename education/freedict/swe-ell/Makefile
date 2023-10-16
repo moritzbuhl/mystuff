@@ -1,4 +1,4 @@
-COMMENT =	Svenska-ελληνικά FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-ελληνικά FreeDict+WikDict dictionary
 DICT =	swe-ell
 V =	2022.11.18
 

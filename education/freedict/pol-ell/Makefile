@@ -1,4 +1,4 @@
-COMMENT =	język polski-ελληνικά FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-ελληνικά FreeDict+WikDict dictionary
 DICT =	pol-ell
 V =	2022.11.18
 

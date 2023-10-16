@@ -1,4 +1,4 @@
-COMMENT =	Svenska-Türkçe FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-Türkçe FreeDict+WikDict dictionary
 DICT =	swe-tur
 V =	2022.11.18
 

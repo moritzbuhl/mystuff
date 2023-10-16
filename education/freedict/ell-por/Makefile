@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-português FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-português FreeDict+WikDict dictionary
 DICT =	ell-por
 V =	2022.11.18
 

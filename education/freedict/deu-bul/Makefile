@@ -1,4 +1,4 @@
-COMMENT =	Deutsch-български език FreeDict+WikDict dictionary ver. 2020.10.04
+COMMENT =	Deutsch-български език FreeDict+WikDict dictionary
 DICT =	deu-bul
 V =	2020.10.04
 

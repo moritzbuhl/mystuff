@@ -1,4 +1,4 @@
-COMMENT =	English-Afrikaans FreeDict Dictionary ver. 0.1.3
+COMMENT =	English-Afrikaans FreeDict Dictionary
 DICT =	eng-afr
 V =	0.1.3
 

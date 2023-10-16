@@ -1,4 +1,4 @@
-COMMENT =	Swahili-Polish SSSP/FreeDict Dictionary ver. 0.2.3
+COMMENT =	Swahili-Polish SSSP/FreeDict Dictionary
 DICT =	swh-pol
 V =	0.2.3
 

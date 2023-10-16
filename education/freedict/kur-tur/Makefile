@@ -1,4 +1,4 @@
-COMMENT =	Kurdish-Turkish Ferheng/FreeDict Dictionary ver. 0.1.2
+COMMENT =	Kurdish-Turkish Ferheng/FreeDict Dictionary
 DICT =	kur-tur
 V =	0.1.2
 

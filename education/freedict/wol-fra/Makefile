@@ -1,4 +1,4 @@
-COMMENT =	Wolof - French FreeDict dictionary ver. 0.1
+COMMENT =	Wolof - French FreeDict dictionary
 DICT =	wol-fra
 V =	0.1
 

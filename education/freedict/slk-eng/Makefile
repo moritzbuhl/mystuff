@@ -1,4 +1,4 @@
-COMMENT =	Slovak-English FreeDict Dictionary ver. 0.2.1
+COMMENT =	Slovak-English FreeDict Dictionary
 DICT =	slk-eng
 V =	0.2.1
 

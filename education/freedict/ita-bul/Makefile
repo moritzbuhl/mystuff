@@ -1,4 +1,4 @@
-COMMENT =	italiano-български език FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	italiano-български език FreeDict+WikDict dictionary
 DICT =	ita-bul
 V =	2022.11.18
 

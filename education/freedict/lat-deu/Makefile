@@ -1,4 +1,4 @@
-COMMENT =	Lateinisch-Deutsch FreeDict-Wörterbuch ver. 1.0.3
+COMMENT =	Lateinisch-Deutsch FreeDict-Wörterbuch
 DICT =	lat-deu
 V =	1.0.3
 

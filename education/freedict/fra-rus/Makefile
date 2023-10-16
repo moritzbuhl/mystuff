@@ -1,4 +1,4 @@
-COMMENT =	français-Русский FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	français-Русский FreeDict+WikDict dictionary
 DICT =	fra-rus
 V =	2022.11.18
 

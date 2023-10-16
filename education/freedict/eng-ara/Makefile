@@ -1,4 +1,4 @@
-COMMENT =	English-Arabic FreeDict Dictionary ver. 0.6.3
+COMMENT =	English-Arabic FreeDict Dictionary
 DICT =	eng-ara
 V =	0.6.3
 

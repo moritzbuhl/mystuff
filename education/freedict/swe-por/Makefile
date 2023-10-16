@@ -1,4 +1,4 @@
-COMMENT =	Svenska-português FreeDict+WikDict dictionary ver. 2020.10.04
+COMMENT =	Svenska-português FreeDict+WikDict dictionary
 DICT =	swe-por
 V =	2020.10.04
 

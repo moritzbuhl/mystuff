@@ -1,4 +1,4 @@
-COMMENT =	Turkish-English FreeDict Dictionary ver. 0.3
+COMMENT =	Turkish-English FreeDict Dictionary
 DICT =	tur-eng
 V =	0.3
 

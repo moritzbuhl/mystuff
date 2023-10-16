@@ -1,4 +1,4 @@
-COMMENT =	Slovenian-English FreeDict Dictionary ver. 0.1
+COMMENT =	Slovenian-English FreeDict Dictionary
 DICT =	slv-eng
 V =	0.1
 

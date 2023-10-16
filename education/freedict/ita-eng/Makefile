@@ -1,4 +1,4 @@
-COMMENT =	Italian-English FreeDict Dictionary ver. 0.2
+COMMENT =	Italian-English FreeDict Dictionary
 DICT =	ita-eng
 V =	0.2
 

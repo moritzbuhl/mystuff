@@ -1,4 +1,4 @@
-COMMENT =	English-Dutch FreeDict Dictionary ver. 0.2
+COMMENT =	English-Dutch FreeDict Dictionary
 DICT =	eng-nld
 V =	0.2
 

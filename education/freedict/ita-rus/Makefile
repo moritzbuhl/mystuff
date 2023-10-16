@@ -1,4 +1,4 @@
-COMMENT =	italiano-Русский FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	italiano-Русский FreeDict+WikDict dictionary
 DICT =	ita-rus
 V =	2022.11.18
 

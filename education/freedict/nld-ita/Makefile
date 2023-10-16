@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-italiano FreeDict+WikDict dictionary ver. 2018.09.13
+COMMENT =	Nederlands-italiano FreeDict+WikDict dictionary
 DICT =	nld-ita
 V =	2018.09.13
 

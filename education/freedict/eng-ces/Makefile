@@ -1,4 +1,4 @@
-COMMENT =	English-Czech dicts.info/FreeDict Dictionary ver. 0.1.3
+COMMENT =	English-Czech dicts.info/FreeDict Dictionary
 DICT =	eng-ces
 V =	0.1.3
 

@@ -1,4 +1,4 @@
-COMMENT =	Danish-English FreeDict Dictionary ver. 0.3.1
+COMMENT =	Danish-English FreeDict Dictionary
 DICT =	dan-eng
 V =	0.3.1
 

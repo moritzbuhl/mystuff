@@ -1,4 +1,4 @@
-COMMENT =	italiano-日本語 (にほんご) FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	italiano-日本語 (にほんご) FreeDict+WikDict dictionary
 DICT =	ita-jpn
 V =	2022.11.18
 

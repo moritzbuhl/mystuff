@@ -1,4 +1,4 @@
-COMMENT =	Svenska-latine FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-latine FreeDict+WikDict dictionary
 DICT =	swe-lat
 V =	2022.11.18
 

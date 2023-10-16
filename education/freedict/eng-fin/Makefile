@@ -1,4 +1,4 @@
-COMMENT =	English-suomi FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	English-suomi FreeDict+WikDict dictionary
 DICT =	eng-fin
 V =	2022.11.18
 

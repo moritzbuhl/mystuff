@@ -1,4 +1,4 @@
-COMMENT =	język polski-suomi FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-suomi FreeDict+WikDict dictionary
 DICT =	pol-fin
 V =	2022.11.18
 

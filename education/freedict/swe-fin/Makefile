@@ -1,4 +1,4 @@
-COMMENT =	Svenska-suomi FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-suomi FreeDict+WikDict dictionary
 DICT =	swe-fin
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	Svenska-日本語 (にほんご) FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-日本語 (にほんご) FreeDict+WikDict dictionary
 DICT =	swe-jpn
 V =	2022.11.18
 

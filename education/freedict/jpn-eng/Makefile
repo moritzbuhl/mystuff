@@ -1,4 +1,4 @@
-COMMENT =	Japanese-English FreeDict Dictionary ver. 0.1
+COMMENT =	Japanese-English FreeDict Dictionary
 DICT =	jpn-eng
 V =	0.1
 

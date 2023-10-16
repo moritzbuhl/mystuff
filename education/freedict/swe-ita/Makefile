@@ -1,4 +1,4 @@
-COMMENT =	Svenska-italiano FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-italiano FreeDict+WikDict dictionary
 DICT =	swe-ita
 V =	2022.11.18
 

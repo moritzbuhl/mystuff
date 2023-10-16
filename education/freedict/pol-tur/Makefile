@@ -1,4 +1,4 @@
-COMMENT =	język polski-Türkçe FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-Türkçe FreeDict+WikDict dictionary
 DICT =	pol-tur
 V =	2022.11.18
 

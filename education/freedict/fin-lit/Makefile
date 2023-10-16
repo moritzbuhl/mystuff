@@ -1,4 +1,4 @@
-COMMENT =	suomi-lietuvių kalba FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	suomi-lietuvių kalba FreeDict+WikDict dictionary
 DICT =	fin-lit
 V =	2022.11.18
 

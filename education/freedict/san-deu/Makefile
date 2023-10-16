@@ -1,4 +1,4 @@
-COMMENT =	Sanskrit-German FreeDict Dictionary ver. 0.2.3
+COMMENT =	Sanskrit-German FreeDict Dictionary
 DICT =	san-deu
 V =	0.2.3
 

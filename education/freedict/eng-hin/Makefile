@@ -1,4 +1,4 @@
-COMMENT =	English-Hindi FreeDict Dictionary ver. 1.6
+COMMENT =	English-Hindi FreeDict Dictionary
 DICT =	eng-hin
 V =	1.6
 

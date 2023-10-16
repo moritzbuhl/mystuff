@@ -1,4 +1,4 @@
-COMMENT =	Svenska-Norsk FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-Norsk FreeDict+WikDict dictionary
 DICT =	swe-nor
 V =	2022.11.18
 

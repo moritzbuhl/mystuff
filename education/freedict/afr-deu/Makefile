@@ -1,4 +1,4 @@
-COMMENT =	Afrikaans-German FreeDict Dictionary ver. 0.3.3
+COMMENT =	Afrikaans-German FreeDict Dictionary
 DICT =	afr-deu
 V =	0.3.3
 

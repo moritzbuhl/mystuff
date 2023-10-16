@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-español FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-español FreeDict+WikDict dictionary
 DICT =	ell-spa
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	German - English Ding/FreeDict dictionary ver. 1.9-fd1
+COMMENT =	German - English Ding/FreeDict dictionary
 DICT =	deu-eng
 V =	1.9-fd1
 

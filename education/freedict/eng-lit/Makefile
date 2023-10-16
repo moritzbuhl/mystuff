@@ -1,4 +1,4 @@
-COMMENT =	English-Lithuanian FreeDict Dictionary ver. 0.7.2
+COMMENT =	English-Lithuanian FreeDict Dictionary
 DICT =	eng-lit
 V =	0.7.2
 

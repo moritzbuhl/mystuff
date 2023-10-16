@@ -1,4 +1,4 @@
-COMMENT =	Spanish-English FreeDict Dictionary ver. 0.3.1
+COMMENT =	Spanish-English FreeDict Dictionary
 DICT =	spa-eng
 V =	0.3.1
 

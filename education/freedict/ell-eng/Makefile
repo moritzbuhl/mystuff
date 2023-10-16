@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-English FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-English FreeDict+WikDict dictionary
 DICT =	ell-eng
 V =	2022.11.18
 

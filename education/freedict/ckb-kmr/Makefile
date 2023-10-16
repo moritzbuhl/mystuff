@@ -1,4 +1,4 @@
-COMMENT =	Sorani-Kurmanji Ferheng/FreeDict Dictionary ver. 0.2
+COMMENT =	Sorani-Kurmanji Ferheng/FreeDict Dictionary
 DICT =	ckb-kmr
 V =	0.2
 

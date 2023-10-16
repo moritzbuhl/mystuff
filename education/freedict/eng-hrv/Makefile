@@ -1,4 +1,4 @@
-COMMENT =	English-Croatian FreeDict Dictionary ver. 0.2.2
+COMMENT =	English-Croatian FreeDict Dictionary
 DICT =	eng-hrv
 V =	0.2.2
 

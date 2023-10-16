@@ -1,4 +1,4 @@
-COMMENT =	Svenska-Русский FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-Русский FreeDict+WikDict dictionary
 DICT =	swe-rus
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	Svenska-français FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Svenska-français FreeDict+WikDict dictionary
 DICT =	swe-fra
 V =	2022.11.18
 

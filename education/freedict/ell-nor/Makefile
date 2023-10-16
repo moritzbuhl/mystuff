@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-Norsk FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-Norsk FreeDict+WikDict dictionary
 DICT =	ell-nor
 V =	2022.11.18
 

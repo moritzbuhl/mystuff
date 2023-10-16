@@ -1,4 +1,4 @@
-COMMENT =	język polski-Русский FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-Русский FreeDict+WikDict dictionary
 DICT =	pol-rus
 V =	2022.11.18
 

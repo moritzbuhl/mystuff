@@ -1,4 +1,4 @@
-COMMENT =	Norwegian Nynorsk-Norwegian Bokmål FreeDict Dictionary ver. 0.1.1
+COMMENT =	Norwegian Nynorsk-Norwegian Bokmål FreeDict Dictionary
 DICT =	nno-nob
 V =	0.1.1
 

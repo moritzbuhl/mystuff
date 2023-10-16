@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-latine FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Nederlands-latine FreeDict+WikDict dictionary
 DICT =	nld-lat
 V =	2022.11.18
 

@@ -1,4 +1,4 @@
-COMMENT =	Japanese-German FreeDict Dictionary ver. 0.2.0
+COMMENT =	Japanese-German FreeDict Dictionary
 DICT =	jpn-deu
 V =	0.2.0
 

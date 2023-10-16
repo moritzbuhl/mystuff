@@ -1,4 +1,4 @@
-COMMENT =	język polski-Nederlands FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	język polski-Nederlands FreeDict+WikDict dictionary
 DICT =	pol-nld
 V =	2022.11.18
 

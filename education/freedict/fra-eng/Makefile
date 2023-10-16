@@ -1,4 +1,4 @@
-COMMENT =	French-English FreeDict Dictionary ver. 0.4.1
+COMMENT =	French-English FreeDict Dictionary
 DICT =	fra-eng
 V =	0.4.1
 

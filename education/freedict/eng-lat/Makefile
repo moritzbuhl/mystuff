@@ -1,4 +1,4 @@
-COMMENT =	English-Latin FreeDict Dictionary ver. 0.1.2
+COMMENT =	English-Latin FreeDict Dictionary
 DICT =	eng-lat
 V =	0.1.2
 

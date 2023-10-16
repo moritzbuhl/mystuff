@@ -1,4 +1,4 @@
-COMMENT =	English-Romanian FreeDict Dictionary ver. 0.6.3
+COMMENT =	English-Romanian FreeDict Dictionary
 DICT =	eng-rom
 V =	0.6.3
 

@@ -1,4 +1,4 @@
-COMMENT =	English-Swedish FreeDict Dictionary ver. 0.2
+COMMENT =	English-Swedish FreeDict Dictionary
 DICT =	eng-swe
 V =	0.2
 

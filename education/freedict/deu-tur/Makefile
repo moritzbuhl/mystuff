@@ -1,4 +1,4 @@
-COMMENT =	German-Turkish Ferheng/FreeDict Dictionary ver. 0.2.2
+COMMENT =	German-Turkish Ferheng/FreeDict Dictionary
 DICT =	deu-tur
 V =	0.2.2
 

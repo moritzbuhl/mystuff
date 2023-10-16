@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-български език FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-български език FreeDict+WikDict dictionary
 DICT =	ell-bul
 V =	2022.11.18
 

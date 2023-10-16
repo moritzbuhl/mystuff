@@ -1,4 +1,4 @@
-COMMENT =	Portuguese-German FreeDict Dictionary ver. 0.2
+COMMENT =	Portuguese-German FreeDict Dictionary
 DICT =	por-deu
 V =	0.2
 

@@ -1,4 +1,4 @@
-COMMENT =	français-español FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	français-español FreeDict+WikDict dictionary
 DICT =	fra-spa
 V =	2022.11.18
 

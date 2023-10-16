@@ -1,4 +1,4 @@
-COMMENT =	English - Modern Greek XDXF/FreeDict dictionary ver. 0.1.1
+COMMENT =	English - Modern Greek XDXF/FreeDict dictionary
 DICT =	eng-ell
 V =	0.1.1
 

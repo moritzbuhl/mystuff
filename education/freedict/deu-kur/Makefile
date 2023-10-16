@@ -1,4 +1,4 @@
-COMMENT =	German-Kurdish Ferheng/FreeDict Dictionary ver. 0.2.2
+COMMENT =	German-Kurdish Ferheng/FreeDict Dictionary
 DICT =	deu-kur
 V =	0.2.2
 

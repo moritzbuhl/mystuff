@@ -1,4 +1,4 @@
-COMMENT =	English-Serbian FreeDict Dictionary ver. 0.1.3
+COMMENT =	English-Serbian FreeDict Dictionary
 DICT =	eng-srp
 V =	0.1.3
 

@@ -1,4 +1,4 @@
-COMMENT =	suomi-latine FreeDict+WikDict dictionary ver. 2022.04.06
+COMMENT =	suomi-latine FreeDict+WikDict dictionary
 DICT =	fin-lat
 V =	2022.04.06
 

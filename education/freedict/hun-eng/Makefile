@@ -1,4 +1,4 @@
-COMMENT =	Hungarian-English FreeDict Dictionary ver. 0.4.1
+COMMENT =	Hungarian-English FreeDict Dictionary
 DICT =	hun-eng
 V =	0.4.1
 

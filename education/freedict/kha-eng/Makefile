@@ -1,4 +1,4 @@
-COMMENT =	Khasi-English FreeDict Dictionary ver. 0.2.2
+COMMENT =	Khasi-English FreeDict Dictionary
 DICT =	kha-eng
 V =	0.2.2
 

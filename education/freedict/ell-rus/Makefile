@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-Русский FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-Русский FreeDict+WikDict dictionary
 DICT =	ell-rus
 V =	2022.11.18
 

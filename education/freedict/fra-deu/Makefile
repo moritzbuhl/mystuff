@@ -1,4 +1,4 @@
-COMMENT =	français-Deutsch FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	français-Deutsch FreeDict+WikDict dictionary
 DICT =	fra-deu
 V =	2022.11.18
 

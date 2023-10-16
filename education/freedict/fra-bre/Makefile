@@ -1,4 +1,4 @@
-COMMENT =	French-Breton FreeDict Dictionary (Geriadur Tomaz) ver. 0.2.7
+COMMENT =	French-Breton FreeDict Dictionary (Geriadur Tomaz)
 DICT =	fra-bre
 V =	0.2.7
 

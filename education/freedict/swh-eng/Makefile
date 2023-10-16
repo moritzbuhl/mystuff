@@ -1,4 +1,4 @@
-COMMENT =	Swahili-English xFried/FreeDict Dictionary ver. 0.4.4
+COMMENT =	Swahili-English xFried/FreeDict Dictionary
 DICT =	swh-eng
 V =	0.4.4
 

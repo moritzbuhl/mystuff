@@ -1,4 +1,4 @@
-COMMENT =	Italian-German FreeDict Dictionary ver. 0.2.1
+COMMENT =	Italian-German FreeDict Dictionary
 DICT =	ita-deu
 V =	0.2.1
 

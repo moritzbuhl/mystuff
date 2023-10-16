@@ -1,4 +1,4 @@
-COMMENT =	italiano-português FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	italiano-português FreeDict+WikDict dictionary
 DICT =	ita-por
 V =	2022.11.18
 

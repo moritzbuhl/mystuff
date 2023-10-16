@@ -1,4 +1,4 @@
-COMMENT =	Spanish-Portuguese FreeDict Dictionary ver. 0.2.1
+COMMENT =	Spanish-Portuguese FreeDict Dictionary
 DICT =	spa-por
 V =	0.2.1
 

@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-lietuvių kalba FreeDict+WikDict dictionary ver. 2020.10.04
+COMMENT =	Nederlands-lietuvių kalba FreeDict+WikDict dictionary
 DICT =	nld-lit
 V =	2020.10.04
 

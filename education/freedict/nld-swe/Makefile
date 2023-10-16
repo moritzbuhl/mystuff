@@ -1,4 +1,4 @@
-COMMENT =	Nederlands-Svenska FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Nederlands-Svenska FreeDict+WikDict dictionary
 DICT =	nld-swe
 V =	2022.11.18
 

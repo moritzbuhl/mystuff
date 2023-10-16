@@ -1,4 +1,4 @@
-COMMENT =	English-Bahasa Indonesia FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	English-Bahasa Indonesia FreeDict+WikDict dictionary
 DICT =	eng-ind
 V =	2022.11.18
 

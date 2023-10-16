@@ -1,4 +1,4 @@
-COMMENT =	Irish-English FreeDict Dictionary ver. 0.2
+COMMENT =	Irish-English FreeDict Dictionary
 DICT =	gle-eng
 V =	0.2
 

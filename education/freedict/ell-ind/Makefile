@@ -1,4 +1,4 @@
-COMMENT =	ελληνικά-Bahasa Indonesia FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	ελληνικά-Bahasa Indonesia FreeDict+WikDict dictionary
 DICT =	ell-ind
 V =	2022.11.18
 

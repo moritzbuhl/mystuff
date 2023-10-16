@@ -1,4 +1,4 @@
-COMMENT =	Spanish-German FreeDict Dictionary ver. 0.1
+COMMENT =	Spanish-German FreeDict Dictionary
 DICT =	spa-deu
 V =	0.1
 

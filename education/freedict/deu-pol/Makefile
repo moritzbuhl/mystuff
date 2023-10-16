@@ -1,4 +1,4 @@
-COMMENT =	Deutsch-język polski FreeDict+WikDict dictionary ver. 2022.11.18
+COMMENT =	Deutsch-język polski FreeDict+WikDict dictionary
 DICT =	deu-pol
 V =	2022.11.18
 
