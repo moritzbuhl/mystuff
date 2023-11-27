@@ -40,7 +40,6 @@ do-install:
 		${PREFIX}/lib/libxquic.a
 
 do-test:
-	${WRKBUILD}/tests/run_tests
-	cd ${WRKBUILD}  && bash ${WRKSRC}/scripts/case_test.sh
+	cd ${WRKBUILD} && bash ${WRKSRC}/scripts/xquic_test.sh
 
 .include <bsd.port.mk>

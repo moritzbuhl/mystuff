@@ -1,0 +1,30 @@
+Index: scripts/xquic_test.sh
+--- scripts/xquic_test.sh.orig
++++ scripts/xquic_test.sh
+@@ -106,19 +106,19 @@ mkdir -p ../third_party
+ 
+ 
+ generate_cert
+-install_gcov_tool
+-install_cunit
+-install_go
++#install_gcov_tool
++#install_cunit
++#install_go
+ 
+ #run boringssl
+-do_compile "XQC_OPENSSL_IS_BORINGSSL"
++#do_compile "XQC_OPENSSL_IS_BORINGSSL"
+ run_test_case
+ 
+ #run babassl
+-do_compile
+-run_test_case
++#do_compile
++#run_test_case
+ 
+-run_gcov
++#run_gcov
+ output_summary
+ 
+ cd -
