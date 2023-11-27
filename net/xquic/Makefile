@@ -18,6 +18,9 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=	crypto pthread ssl
 
 MODULES =	devel/cmake
+BUILD_DEPENDS +=	devel/cunit \
+			devel/libevent2
+TEST_DEPENDS +=		shells/bash
 
 SEPARATE_BUILD =	Yes
 DEBUG_PACKAGES =	${BUILD_PACKAGES}
@@ -26,6 +29,7 @@ CONFIGURE_ARGS =	-DCMAKE_BUILD_TYPE=Release \
 			-DXQC_ENABLE_EVENT_LOG=1 \
 			-DXQC_ENABLE_BBR2=1 \
 			-DXQC_ENABLE_RENO=1 \
+			-DXQC_ENABLE_TESTING=1 \
 			-DSSL_LIB_PATH="/usr/lib/libssl.a;/usr/lib/libcrypto.a" \
 			-DSSL_INC_PATH="/usr/include/openssl"
 
@@ -35,6 +39,8 @@ do-install:
 	${INSTALL_DATA} ${WRKBUILD}/libxquic-static.a \
 		${PREFIX}/lib/libxquic.a
 
-# XXX: tests
+do-test:
+	${WRKBUILD}/tests/run_tests
+	cd ${WRKBUILD}  && bash ${WRKSRC}/scripts/case_test.sh
 
 .include <bsd.port.mk>

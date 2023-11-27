@@ -1,0 +1,29 @@
+Index: demo/demo_client.c
+--- demo/demo_client.c.orig
++++ demo/demo_client.c
+@@ -1,6 +1,7 @@
+ /**
+  * @copyright Copyright (c) 2022, Alibaba Group Holding Limited
+  */
++#include <sys/stat.h>
+ 
+ #define _GNU_SOURCE
+ 
+@@ -1622,7 +1623,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
+     /* set hint for hostname resolve */
+     struct addrinfo hints = {0};
+     memset(&hints, 0, sizeof(struct addrinfo));
+-    hints.ai_family = AF_UNSPEC;    /* Allow IPv4 or IPv6 */
++    hints.ai_family = AF_INET;    /* Allow IPv4 or IPv6 */
+     hints.ai_socktype = SOCK_DGRAM; /* Datagram socket */
+     hints.ai_flags = AI_PASSIVE;    /* For wildcard IP address */
+     hints.ai_protocol = 0;          /* Any protocol */
+@@ -2543,7 +2544,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
+         memset(&ifr, 0x00, sizeof(ifr));
+         strncpy(ifr.ifr_name, cfg->iflist[path_seq], sizeof(ifr.ifr_name) - 1);
+ 
+-#if !defined(__APPLE__)
++#if !defined(__APPLE__) && !defined(__OpenBSD__)
+         printf("fd: %d. bind to nic: %s\n", fd, cfg->iflist[path_seq]);
+         if (setsockopt(fd, SOL_SOCKET, SO_BINDTODEVICE, (char *)&ifr, sizeof(ifr)) < 0) {
+             printf("bind to nic error: %d, try use sudo\n", errno);

@@ -1,0 +1,11 @@
+Index: tests/CMakeLists.txt
+--- tests/CMakeLists.txt.orig
++++ tests/CMakeLists.txt
+@@ -53,7 +53,6 @@ if(HAVE_CUNIT)
+         ${CUNIT_LIBRARIES}
+         ${SSL_LIB_PATH}
+         m
+-        dl
+         pthread
+     )
+ 

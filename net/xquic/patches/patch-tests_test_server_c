@@ -1,0 +1,11 @@
+Index: tests/test_server.c
+--- tests/test_server.c.orig
++++ tests/test_server.c
+@@ -1,6 +1,7 @@
+ /**
+  * @copyright Copyright (c) 2022, Alibaba Group Holding Limited
+  */
++#include <sys/signal.h>
+ 
+ #define _GNU_SOURCE
+ #include <stdio.h>

@@ -11,3 +11,18 @@ Index: CMakeLists.txt
          "-Wl,--no-whole-archive"
          -lpthread
      )
+@@ -431,10 +430,10 @@ if (XQC_ENABLE_TESTING)
+         target_link_libraries(demo_server xquic ${EVENT_LIB_PATH} -lm)
+         target_link_libraries(demo_client xquic ${EVENT_LIB_PATH} -lm)
+     else()
+-        target_link_libraries(test_server xquic-static ${SSL_LIB_PATH} -ldl -lpthread -levent -lm)
+-        target_link_libraries(test_client xquic-static ${SSL_LIB_PATH} -ldl -lpthread -levent -lm)
+-        target_link_libraries(demo_server xquic -levent -lm)
+-        target_link_libraries(demo_client xquic -levent -lm)
++        target_link_libraries(test_server xquic-static ${SSL_LIB_PATH} -lpthread -lm -L/usr/local/lib -levent_core)
++        target_link_libraries(test_client xquic-static ${SSL_LIB_PATH} -lpthread -lm -L/usr/local/lib -levent_core)
++        target_link_libraries(demo_server xquic -lm -lssl -lcrypto -L/usr/local/lib -levent_core)
++        target_link_libraries(demo_client xquic -lm -lssl -lcrypto -L/usr/local/lib -levent_core)
+     endif()
+ 
+ endif()
