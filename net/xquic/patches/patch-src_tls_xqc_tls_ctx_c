@@ -1,0 +1,15 @@
+LibreSSL does not support SSL_CTX_set_cert_cb.
+
+Index: src/tls/xqc_tls_ctx.c
+--- src/tls/xqc_tls_ctx.c.orig
++++ src/tls/xqc_tls_ctx.c
+@@ -140,7 +140,9 @@ xqc_create_server_ssl_ctx(xqc_tls_ctx_t *ctx)
+         SSL_CTX_set_tlsext_ticket_key_cb(ssl_ctx, xqc_ssl_session_ticket_key_cb);
+     }
+ 
++#if 0
+     SSL_CTX_set_cert_cb(ssl_ctx, xqc_ssl_cert_cb, ctx);
++#endif
+ 
+     SSL_CTX_set_default_verify_paths(ssl_ctx);
+     SSL_CTX_set_alpn_select_cb(ssl_ctx, xqc_ssl_alpn_select_cb, ctx);

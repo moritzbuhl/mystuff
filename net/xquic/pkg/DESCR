@@ -1,0 +1,3 @@
+XQUIC Library released by Alibaba is a client and server implementation
+of QUIC and HTTP/3 as specified by the IETF. Currently supported
+QUIC versions are v1 and draft-29.

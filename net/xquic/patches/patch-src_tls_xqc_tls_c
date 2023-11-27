@@ -1,0 +1,18 @@
+LibreSSL does not support SSL_set_quic_early_data_context.
+
+Index: src/tls/xqc_tls.c
+--- src/tls/xqc_tls.c.orig
++++ src/tls/xqc_tls.c
+@@ -245,10 +245,12 @@ xqc_tls_init_server_ssl(xqc_tls_t *tls, xqc_tls_config
+     /* configure ssl as server */
+     SSL_set_accept_state(ssl);
+ 
++#if 0
+     /* enable early data and set context */
+     xqc_ssl_enable_max_early_data(ssl);
+     SSL_set_quic_early_data_context(ssl, (const uint8_t *)XQC_EARLY_DATA_CONTEXT, 
+                                     XQC_EARLY_DATA_CONTEXT_LEN);
++#endif
+ 
+     return ret;
+ }

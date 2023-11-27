@@ -1,0 +1,12 @@
+Index: src/common/xqc_common.h
+--- src/common/xqc_common.h.orig
++++ src/common/xqc_common.h
+@@ -5,6 +5,8 @@
+ #ifndef _XQC_COMMON_H_INCLUDED_
+ #define _XQC_COMMON_H_INCLUDED_
+ 
++#include <inttypes.h>
++
+ #include <string.h>
+ #include <stdint.h>
+ #include <xquic/xqc_errno.h>

@@ -1,0 +1,13 @@
+Index: CMakeLists.txt
+--- CMakeLists.txt.orig
++++ CMakeLists.txt
+@@ -326,8 +326,7 @@ if(PLATFORM MATCHES "mac")
+ else()
+     target_link_libraries(
+         xquic
+-        "-ldl -Wl,--whole-archive -Wl,--version-script=${CMAKE_CURRENT_SOURCE_DIR}/scripts/xquic.lds"
+-        ${SSL_LIB_PATH}
++        "-Wl,--whole-archive -Wl,--version-script=${CMAKE_CURRENT_SOURCE_DIR}/scripts/xquic.lds"
+         "-Wl,--no-whole-archive"
+         -lpthread
+     )

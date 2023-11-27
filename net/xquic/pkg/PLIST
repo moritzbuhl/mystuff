@@ -1,0 +1,2 @@
+@static-lib lib/libxquic.a
+@lib lib/libxquic.so.${LIBxquic_VERSION}
