@@ -9,7 +9,52 @@ Index: demo/demo_client.c
  
  #define _GNU_SOURCE
  
-@@ -1622,7 +1623,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
+@@ -16,7 +17,7 @@
+ #include <time.h>
+ #include <inttypes.h>
+ #include <string.h>
+-#include <event2/event.h>
++#include <event.h>
+ #include "common.h"
+ #include "xqc_hq.h"
+ #include "../tests/platform.h"
+@@ -35,13 +36,35 @@
+ #include <netdb.h>
+ #endif
+ 
++#include <netinet/in.h>
+ 
+ #define XQC_PACKET_TMP_BUF_LEN  1600
+ #define MAX_BUF_SIZE            (100*1024*1024)
+ #define XQC_INTEROP_TLS_GROUPS  "X25519:P-256:P-384:P-521"
+ #define MAX_PATH_CNT            2
+ 
++struct event *
++event_new(struct event_base *eb, int fd, short events,
++	void (*callback)(int, short, void *), void *arg)
++{
++    struct event * ev;
+ 
++    if ((ev = malloc(sizeof(struct event))) == NULL)
++        return NULL;
++
++    event_set(ev, fd, events, callback, arg);
++
++    return ev;
++}
++
++void
++event_free(struct event *ev)
++{
++    event_del(ev);
++    free(ev);
++}
++
++
+ typedef enum xqc_demo_cli_alpn_type_s {
+     ALPN_HQ,
+     ALPN_H3,
+@@ -1709,7 +1732,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
      /* set hint for hostname resolve */
      struct addrinfo hints = {0};
      memset(&hints, 0, sizeof(struct addrinfo));
@@ -18,7 +63,7 @@ Index: demo/demo_client.c
      hints.ai_socktype = SOCK_DGRAM; /* Datagram socket */
      hints.ai_flags = AI_PASSIVE;    /* For wildcard IP address */
      hints.ai_protocol = 0;          /* Any protocol */
-@@ -2543,7 +2544,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
+@@ -2678,7 +2701,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
          memset(&ifr, 0x00, sizeof(ifr));
          strncpy(ifr.ifr_name, cfg->iflist[path_seq], sizeof(ifr.ifr_name) - 1);
  

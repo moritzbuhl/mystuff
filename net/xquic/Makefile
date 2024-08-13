@@ -4,7 +4,7 @@ DISTNAME =	xquic
 
 GH_ACCOUNT =	alibaba
 GH_PROJECT =	xquic
-GH_TAGNAME =	v1.6.2
+GH_TAGNAME =	v1.8.0
 
 SHARED_LIBS +=	xquic	0.0
 

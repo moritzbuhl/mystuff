@@ -1,28 +1,23 @@
-Index: tests/test_server.c
---- tests/test_server.c.orig
-+++ tests/test_server.c
-@@ -7,7 +7,7 @@
- #include <errno.h>
+Index: demo/demo_server.c
+--- demo/demo_server.c.orig
++++ demo/demo_server.c
+@@ -8,7 +8,7 @@
  #include <memory.h>
  #include <stdlib.h>
+ #include <fcntl.h>
 -#include <event2/event.h>
 +#include <event.h>
+ #include <signal.h>
  #include <inttypes.h>
  #include <xquic/xquic_typedef.h>
- #include <xquic/xquic.h>
-@@ -17,6 +17,8 @@
- #include <signal.h>
- #include <stdint.h>
- 
-+#include <netinet/in.h>
-+
- #include "platform.h"
- 
- #ifndef XQC_SYS_WINDOWS
-@@ -29,6 +31,27 @@
- #pragma comment(lib, "Iphlpapi.lib")
+@@ -28,9 +28,31 @@
  #pragma comment(lib, "Bcrypt.lib")
  #endif
+ 
++#include <netinet/in.h>
+ 
+ #include "common.h"
+ #include "xqc_hq.h"
 +
 +struct event *
 +event_new(struct event_base *eb, int fd, short events,
@@ -45,5 +40,5 @@ Index: tests/test_server.c
 +    free(ev);
 +}
  
- #define XQC_FIRST_OCTET 1
- int
+ 
+ 

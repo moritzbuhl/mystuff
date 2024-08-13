@@ -1,11 +1,36 @@
 Index: tests/CMakeLists.txt
 --- tests/CMakeLists.txt.orig
 +++ tests/CMakeLists.txt
-@@ -53,7 +53,6 @@ if(HAVE_CUNIT)
-         ${CUNIT_LIBRARIES}
+@@ -8,7 +8,7 @@ if(HAVE_CUNIT)
+ endif()
+ 
+ # find LibEvent include and library path
+-find_package(LibEvent 2.0.21)
++find_package(LibEvent)
+ if(NOT LIBEVENT_FOUND)
+     message(FATAL_ERROR "libevent with required version not found")
+ endif()
+@@ -65,7 +65,6 @@ elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin")
          ${SSL_LIB_PATH}
+         ${LIBEVENT_LIBRARY}
          m
 -        dl
          pthread
-     )
- 
+         CACHE STRING "xquic app depend libs")
+ else()
+@@ -75,7 +74,6 @@ else()
+         ${LIBEVENT_LIBRARY}
+         stdc++
+         m
+-        dl
+         pthread
+         CACHE STRING "xquic app depend libs")
+ endif()
+@@ -158,7 +156,6 @@ if(HAVE_CUNIT)
+             ${SSL_LIB_PATH}
+             stdc++
+             m
+-            dl
+             pthread
+             CACHE STRING "xquic unit test depend libs")
+     endif()

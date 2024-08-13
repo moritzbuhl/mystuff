@@ -13,8 +13,8 @@ Index: scripts/xquic_test.sh
 +#install_go
  
  #run boringssl
--do_compile "XQC_OPENSSL_IS_BORINGSSL"
-+#do_compile "XQC_OPENSSL_IS_BORINGSSL"
+-do_compile "boringssl"
++#do_compile "boringssl"
  run_test_case
  
  #run babassl

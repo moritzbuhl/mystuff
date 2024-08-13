@@ -1,7 +1,7 @@
 Index: src/common/utils/vint/xqc_variable_len_int.h
 --- src/common/utils/vint/xqc_variable_len_int.h.orig
 +++ src/common/utils/vint/xqc_variable_len_int.h
-@@ -14,6 +14,11 @@
+@@ -18,6 +18,11 @@
  #define bswap_16 bswap16
  #define bswap_32 bswap32
  #define bswap_64 bswap64
