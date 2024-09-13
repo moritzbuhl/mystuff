@@ -10,7 +10,7 @@ Index: demo/demo_server.c
  #include <signal.h>
  #include <inttypes.h>
  #include <xquic/xquic_typedef.h>
-@@ -28,9 +28,31 @@
+@@ -28,9 +28,32 @@
  #pragma comment(lib, "Bcrypt.lib")
  #endif
  
@@ -29,6 +29,7 @@ Index: demo/demo_server.c
 +        return NULL;
 +
 +    event_set(ev, fd, events, callback, arg);
++    event_base_set(eb, ev);
 +
 +    return ev;
 +}

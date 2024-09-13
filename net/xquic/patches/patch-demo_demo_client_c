@@ -18,7 +18,7 @@ Index: demo/demo_client.c
  #include "common.h"
  #include "xqc_hq.h"
  #include "../tests/platform.h"
-@@ -35,13 +36,35 @@
+@@ -35,13 +36,36 @@
  #include <netdb.h>
  #endif
  
@@ -39,6 +39,7 @@ Index: demo/demo_client.c
 +        return NULL;
 +
 +    event_set(ev, fd, events, callback, arg);
++    event_base_set(eb, ev);
 +
 +    return ev;
 +}
@@ -54,7 +55,7 @@ Index: demo/demo_client.c
  typedef enum xqc_demo_cli_alpn_type_s {
      ALPN_HQ,
      ALPN_H3,
-@@ -1709,7 +1732,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
+@@ -1709,7 +1733,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
      /* set hint for hostname resolve */
      struct addrinfo hints = {0};
      memset(&hints, 0, sizeof(struct addrinfo));
@@ -63,7 +64,7 @@ Index: demo/demo_client.c
      hints.ai_socktype = SOCK_DGRAM; /* Datagram socket */
      hints.ai_flags = AI_PASSIVE;    /* For wildcard IP address */
      hints.ai_protocol = 0;          /* Any protocol */
-@@ -2678,7 +2701,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
+@@ -2678,7 +2702,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
          memset(&ifr, 0x00, sizeof(ifr));
          strncpy(ifr.ifr_name, cfg->iflist[path_seq], sizeof(ifr.ifr_name) - 1);
  

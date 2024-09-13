@@ -19,7 +19,7 @@ Index: tests/test_server.c
  #include "platform.h"
  
  #ifndef XQC_SYS_WINDOWS
-@@ -29,6 +31,27 @@
+@@ -29,6 +31,28 @@
  #pragma comment(lib, "Iphlpapi.lib")
  #pragma comment(lib, "Bcrypt.lib")
  #endif
@@ -34,6 +34,7 @@ Index: tests/test_server.c
 +        return NULL;
 +
 +    event_set(ev, fd, events, callback, arg);
++    event_base_set(eb, ev);
 +
 +    return ev;
 +}
