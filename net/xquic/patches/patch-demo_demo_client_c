@@ -18,7 +18,7 @@ Index: demo/demo_client.c
  #include "common.h"
  #include "xqc_hq.h"
  #include "../tests/platform.h"
-@@ -35,13 +36,36 @@
+@@ -36,13 +37,35 @@
  #include <netdb.h>
  #endif
  
@@ -26,10 +26,10 @@ Index: demo/demo_client.c
  
  #define XQC_PACKET_TMP_BUF_LEN  1600
  #define MAX_BUF_SIZE            (100*1024*1024)
- #define XQC_INTEROP_TLS_GROUPS  "X25519:P-256:P-384:P-521"
+ #define XQC_INTEROP_TLS_GROUPS  "P-256:X25519:P-384:P-521"
  #define MAX_PATH_CNT            2
  
-+struct event *
++static struct event *
 +event_new(struct event_base *eb, int fd, short events,
 +	void (*callback)(int, short, void *), void *arg)
 +{
@@ -44,27 +44,26 @@ Index: demo/demo_client.c
 +    return ev;
 +}
 +
-+void
++static void
 +event_free(struct event *ev)
 +{
 +    event_del(ev);
 +    free(ev);
 +}
 +
-+
  typedef enum xqc_demo_cli_alpn_type_s {
      ALPN_HQ,
      ALPN_H3,
-@@ -1709,7 +1733,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
-     /* set hint for hostname resolve */
-     struct addrinfo hints = {0};
-     memset(&hints, 0, sizeof(struct addrinfo));
--    hints.ai_family = AF_UNSPEC;    /* Allow IPv4 or IPv6 */
-+    hints.ai_family = AF_INET;
-     hints.ai_socktype = SOCK_DGRAM; /* Datagram socket */
-     hints.ai_flags = AI_PASSIVE;    /* For wildcard IP address */
-     hints.ai_protocol = 0;          /* Any protocol */
-@@ -2678,7 +2702,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
+@@ -1792,7 +1815,7 @@ xqc_demo_cli_parse_server_addr(char *url, xqc_demo_cli
+         if (cfg->ipv6) {
+             hints.ai_family = AF_INET6;    /* Allow IPv4 or IPv6 */
+         } else {
+-            hints.ai_family = AF_UNSPEC;    /* Allow IPv4 or IPv6 */
++            hints.ai_family = AF_INET;
+         }
+         hints.ai_socktype = SOCK_DGRAM; /* Datagram socket */
+         hints.ai_flags = AI_PASSIVE;    /* For wildcard IP address */
+@@ -2875,7 +2898,7 @@ xqc_demo_cli_create_socket(xqc_demo_cli_user_path_t *u
          memset(&ifr, 0x00, sizeof(ifr));
          strncpy(ifr.ifr_name, cfg->iflist[path_seq], sizeof(ifr.ifr_name) - 1);
  

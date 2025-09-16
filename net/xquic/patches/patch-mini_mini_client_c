@@ -1,0 +1,12 @@
+Index: mini/mini_client.c
+--- mini/mini_client.c.orig
++++ mini/mini_client.c
+@@ -432,7 +432,7 @@ xqc_mini_cli_init_socket(xqc_mini_cli_user_conn_t *use
+         goto err;
+     }
+ 
+-#if !defined(__APPLE__)
++#if !defined(__APPLE__) && !defined(__OpenBSD__)
+     int val = IP_PMTUDISC_DO;
+     setsockopt(fd, IPPROTO_IP, IP_MTU_DISCOVER, &val, sizeof(val));
+ #endif

@@ -19,12 +19,12 @@ Index: tests/test_server.c
  #include "platform.h"
  
  #ifndef XQC_SYS_WINDOWS
-@@ -29,6 +31,28 @@
+@@ -28,6 +30,28 @@
+ #pragma comment(lib,"ws2_32.lib")
  #pragma comment(lib, "Iphlpapi.lib")
- #pragma comment(lib, "Bcrypt.lib")
  #endif
 +
-+struct event *
++static struct event *
 +event_new(struct event_base *eb, int fd, short events,
 +	void (*callback)(int, short, void *), void *arg)
 +{
@@ -39,7 +39,7 @@ Index: tests/test_server.c
 +    return ev;
 +}
 +
-+void
++static void
 +event_free(struct event *ev)
 +{
 +    event_del(ev);

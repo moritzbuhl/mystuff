@@ -1,10 +1,11 @@
 COMMENT =	cross-platform implementation of QUIC and HTTP/3 protocol
 
-DISTNAME =	xquic
+V =		1.8.3
+PKGNAME =        xquic-$V
 
 GH_ACCOUNT =	alibaba
 GH_PROJECT =	xquic
-GH_TAGNAME =	v1.8.0
+GH_TAGNAME =	v$V
 
 SHARED_LIBS +=	xquic	0.0
 
@@ -36,8 +37,9 @@ CONFIGURE_ARGS =	-DCMAKE_BUILD_TYPE=Release \
 do-install:
 	${INSTALL_DATA} ${WRKBUILD}/libxquic.so \
 		${PREFIX}/lib/libxquic.so.${LIBxquic_VERSION}
-	${INSTALL_DATA} ${WRKBUILD}/libxquic-static.a \
-		${PREFIX}/lib/libxquic.a
+	${INSTALL_DATA} ${WRKBUILD}/libxquic-static.a ${PREFIX}/lib/libxquic.a
+	${INSTALL_DATA_DIR} ${PREFIX}/include/xquic/
+	${INSTALL_DATA} ${WRKSRC}/include/xquic/* ${PREFIX}/include/xquic
 
 do-test:
 	cd ${WRKBUILD} && bash ${WRKSRC}/scripts/xquic_test.sh

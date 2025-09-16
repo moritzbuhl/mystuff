@@ -1,2 +1,8 @@
+include/xquic/
+include/xquic/xqc_configure.h
+include/xquic/xqc_errno.h
+include/xquic/xqc_http3.h
+include/xquic/xquic.h
+include/xquic/xquic_typedef.h
 @static-lib lib/libxquic.a
 @lib lib/libxquic.so.${LIBxquic_VERSION}

@@ -1,7 +1,7 @@
 Index: CMakeLists.txt
 --- CMakeLists.txt.orig
 +++ CMakeLists.txt
-@@ -397,8 +397,7 @@ if(PLATFORM MATCHES "mac")
+@@ -413,8 +413,7 @@ if(PLATFORM MATCHES "mac")
  else()
      target_link_libraries(
          xquic

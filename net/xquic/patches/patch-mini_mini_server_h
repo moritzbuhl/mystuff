@@ -1,27 +1,28 @@
-Index: demo/demo_server.c
---- demo/demo_server.c.orig
-+++ demo/demo_server.c
-@@ -8,7 +8,7 @@
+Index: mini/mini_server.h
+--- mini/mini_server.h.orig
++++ mini/mini_server.h
+@@ -7,7 +7,7 @@
  #include <memory.h>
  #include <stdlib.h>
- #include <fcntl.h>
+ #include <xquic/xquic.h>
 -#include <event2/event.h>
 +#include <event.h>
- #include <signal.h>
- #include <inttypes.h>
+ #include <xquic/xqc_http3.h>
  #include <xquic/xquic_typedef.h>
-@@ -29,9 +29,32 @@
- #pragma comment(lib, "crypt32")
- #endif
+ 
+@@ -16,9 +16,33 @@
+ #include "../tests/platform.h"
+ #include "mini_server_cb.h"
  
 +#include <netinet/in.h>
- 
- #include "common.h"
- #include "xqc_hq.h"
++
+ #define DEFAULT_IP   "127.0.0.1"
+ #define DEFAULT_PORT 8443
+ #define XQC_PACKET_BUF_LEN 1500
 +
 +static struct event *
 +event_new(struct event_base *eb, int fd, short events,
-+	void (*callback)(int, short, void *), void *arg)
++       void (*callback)(int, short, void *), void *arg)
 +{
 +    struct event * ev;
 +
@@ -41,5 +42,5 @@ Index: demo/demo_server.c
 +    free(ev);
 +}
  
- 
- 
+ /**
+  * net config definition
