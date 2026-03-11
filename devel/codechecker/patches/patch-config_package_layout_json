@@ -1,7 +1,7 @@
 Index: config/package_layout.json
 --- config/package_layout.json.orig
 +++ config/package_layout.json
-@@ -1,7 +1,7 @@
+@@ -1,10 +1,10 @@
  {
    "runtime": {
      "analyzers": {
@@ -9,4 +9,8 @@ Index: config/package_layout.json
 +      "clangsa": "${LOCALBASE}/bin/clang-${MODCLANG_VERSION}",
        "clang-tidy": "clang-tidy",
        "cppcheck": "cppcheck",
-       "gcc": "g++",
+-      "gcc": "g++",
++      "gcc": "eg++",
+       "infer": "infer"
+     },
+     "clang-apply-replacements": "clang-apply-replacements"
