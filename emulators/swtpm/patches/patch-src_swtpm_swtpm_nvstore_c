@@ -1,0 +1,18 @@
+Index: src/swtpm/swtpm_nvstore.c
+--- src/swtpm/swtpm_nvstore.c.orig
++++ src/swtpm/swtpm_nvstore.c
+@@ -75,12 +75,8 @@
+ # include <openssl/hmac.h>
+ #endif
+ 
+-#if defined(__OpenBSD__)
+- # define OPENSSL_OLD_API
+-#else
+- #if OPENSSL_VERSION_NUMBER < 0x10100000
+-  #define OPENSSL_OLD_API
+- #endif
++#if OPENSSL_VERSION_NUMBER < 0x10100000
++ #define OPENSSL_OLD_API
+ #endif
+ 
+ #include "swtpm.h"
