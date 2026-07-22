@@ -1,0 +1,88 @@
+Index: tests/test_tpm2_swtpm_cert
+--- tests/test_tpm2_swtpm_cert.orig
++++ tests/test_tpm2_swtpm_cert
+@@ -41,6 +41,60 @@ ISSUERCERT_MLDSA87=${TMPDIR}/mldsa87-issuercert.pem
+ # ED448 key used for signing
+ ISSUERCERT_ED448=${TMPDIR}/ed448-issuercert.pem
+ 
++if openssl version 2>/dev/null | grep -qi 'LibreSSL'; then
++set -x
++    EC521CSR=${TMPDIR}/ec521-signing.csr
++    RSA3072CSR=${TMPDIR}/rsa3072-signing.csr
++    if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>&1) ||
++       ! msg=$(openssl rsa -in "${RSAPRIVKEY}" -pubout -out "${RSAPUBKEY}" 2>&1) ||
++       ! msg=$(openssl ecparam -name prime256v1 -genkey -noout -out "${EC256PRIVKEY}" 2>&1) ||
++       ! msg=$(openssl ec -in "${EC256PRIVKEY}" -pubout -out "${EC256PUBKEY}" 2>&1) ||
++       ! msg=$(openssl req \
++            -x509 \
++            -new \
++            -nodes \
++            -keyout "${CAKEY}" \
++            -newkey rsa:3072 \
++            -sha256 \
++            -days 365 \
++            -out "${CACERT}" \
++            -subj "/CN=swtpm-localca-rootca" 2>&1) ||
++       ! msg=$(openssl ecparam -name secp521r1 -genkey -noout -out "${EC521PRIVKEY}" 2>&1) ||
++       ! msg=$(openssl ec -in "${EC521PRIVKEY}" -pubout -out "${EC521PUBKEY}" 2>&1) ||
++       ! msg=$(openssl genrsa -out "${RSA3072PRIVKEY}" 3072 2>&1) ||
++       ! msg=$(openssl rsa -in "${RSA3072PRIVKEY}" -pubout -out "${RSA3072PUBKEY}" 2>&1) ||
++       ! msg=$(openssl req \
++            -new \
++            -key "${EC521PRIVKEY}" \
++            -out "${EC521CSR}" \
++            -subj "/CN=swtpm-localca" 2>&1) ||
++       ! msg=$(openssl x509 \
++            -req \
++            -in "${EC521CSR}" \
++            -CA "${CACERT}" \
++            -CAkey "${CAKEY}" \
++            -CAcreateserial \
++            -days 1000 \
++            -out "${ISSUERCERT_EC521}" 2>&1) ||
++       ! msg=$(openssl req \
++            -new \
++            -key "${RSA3072PRIVKEY}" \
++            -out "${RSA3072CSR}" \
++            -subj "/CN=swtpm-localca" 2>&1) ||
++       ! msg=$(openssl x509 \
++            -req \
++            -in "${RSA3072CSR}" \
++            -CA "${CACERT}" \
++            -CAkey "${CAKEY}" \
++            -CAcreateserial \
++            -days 1000 \
++            -out "${ISSUERCERT_RSA3072}" 2>&1) \
++; then
++        echo "Could not create the required keys"
++        echo "${msg}"
++        exit 1
++    fi
++else
+ if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>&1) ||
+    ! msg=$(openssl rsa -in "${RSAPRIVKEY}" -pubout -out "${RSAPUBKEY}" 2>&1) ||
+    ! msg=$(openssl ecparam -name prime256v1 -genkey -noout -out "${EC256PRIVKEY}" 2>&1) || \
+@@ -102,6 +156,7 @@ if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>
+ 	echo "${msg}"
+ 	exit 1
+ fi
++fi
+ 
+ echo "Testing with RSA certificate signing key"
+ 
+@@ -131,6 +186,7 @@ ret=$?
+ [ $ret -ne 0 ] && exit $ret
+ 
+ 
++if ! openssl version 2>/dev/null | grep -qi 'LibreSSL'; then
+ printf "\nTesting with ml-dsa-87 certificate signing key\n"
+ 
+ PARAM_RSAPUBKEY="${RSAPUBKEY}" \
+@@ -157,6 +213,6 @@ PARAM_CERT_SIZES="758 553 804 553 2052 1284 3076 769 5
+ 	./_test_tpm2_swtpm_cert
+ ret=$?
+ [ $ret -ne 0 ] && exit $ret
+-
++fi
+ 
+ exit 0

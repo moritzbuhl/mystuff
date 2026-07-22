@@ -79,7 +79,7 @@ Index: src/swtpm_cert/ek-cert.c
 +                       "Could not push BN.\n");
 +    n = NULL;
 +    e = NULL;
-+    CHECK_OSSL_RETURN1(EVP_PKEY_assign_RSA(pubkey, rsa),
++    CHECK_OSSL_RETURN1(!EVP_PKEY_assign_RSA(pubkey, rsa),
 +                       "Could not create RSA public key.\n");
 +    return pubkey;
 +
