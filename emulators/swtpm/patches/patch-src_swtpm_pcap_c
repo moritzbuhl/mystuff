@@ -15,17 +15,18 @@ Index: src/swtpm/pcap.c
  
  #include <glib.h>
  
-@@ -74,6 +74,9 @@ struct packet {
+@@ -74,6 +74,10 @@ struct packet {
      struct ip     iphdr; // Cygwin has 'struct ip' but not 'struct iphdr'
      struct tcphdr tcphdr;
  } __attribute__((packed));
 +#define PACKET_ETHHDR_OFF	(sizeof(struct enhanced_packet_block_hdr))
 +#define PACKET_IPHDR_OFF	(PACKET_ETHHDR_OFF + sizeof(struct ethhdr))
 +#define PACKET_TCPHDR_OFF	(PACKET_IPHDR_OFF + sizeof(struct ip))
++#define PACKET_DATA_OFF		(PACKET_TCPHDR_OFF + sizeof(struct tcphdr))
  
  static __attribute__((noinline)) uint32_t calc_checksum(void *array, size_t array_len)
  {
-@@ -93,21 +96,31 @@ static __attribute__((noinline)) uint32_t calc_checksu
+@@ -93,21 +97,31 @@ static __attribute__((noinline)) uint32_t calc_checksu
       return check;
  }
  
@@ -62,7 +63,7 @@ Index: src/swtpm/pcap.c
      struct {
          uint32_t saddr;
          uint32_t daddr;
-@@ -115,26 +128,27 @@ static void calc_tcp_checksum(struct packet *packet,
+@@ -115,26 +129,27 @@ static void calc_tcp_checksum(struct packet *packet,
          uint8_t  protocol;
          uint16_t tcpseglength;
      } pseudo = {
@@ -97,7 +98,7 @@ Index: src/swtpm/pcap.c
                             void *payload, size_t payload_len,
                             struct pcap_state *ps)
  {
-@@ -179,10 +193,13 @@ static int pcap_file_header_write(int fd)
+@@ -179,10 +194,13 @@ static int pcap_file_header_write(int fd)
      return write_full(fd, &shb, sizeof(shb));
  }
  
@@ -112,7 +113,7 @@ Index: src/swtpm/pcap.c
      struct timespec ts;
      size_t hdrs_len;
      uint64_t ms;
-@@ -193,41 +210,43 @@ static int pcap_packet_fill(struct packet *packet, boo
+@@ -193,41 +211,43 @@ static int pcap_packet_fill(struct packet *packet, boo
      ms = ts.tv_sec * 1000 * 1000 + ts.tv_nsec / 1000;
      hdrs_len = sizeof(struct ethhdr) + sizeof(struct ip) + sizeof(struct tcphdr);
  
@@ -190,7 +191,7 @@ Index: src/swtpm/pcap.c
      return 0;
  }
  
-@@ -235,10 +254,12 @@ static int pcap_packet_fill(struct packet *packet, boo
+@@ -235,10 +255,12 @@ static int pcap_packet_fill(struct packet *packet, boo
   * Write a packet to the file. Take care of unaligned packets to due unaligned
   * overall size (32bit alignment). Also write a block_total_len at the end.
   */
@@ -201,11 +202,11 @@ Index: src/swtpm/pcap.c
 -    size_t packet_len = sizeof(*packet);
 +    struct enhanced_packet_block_hdr *packet_epb_hdr =
 +        (struct enhanced_packet_block_hdr *)packet;
-+    size_t packet_len = PACKET_TCPHDR_OFF;
++    size_t packet_len = PACKET_DATA_OFF;
      size_t filler_len = 4 - ((packet_len + tpm_packet_len) & 3);
      uint32_t block_total_len;
      uint8_t filler[3] = { 0, };
-@@ -258,7 +279,8 @@ static int pcap_write(int fd, struct packet *packet,
+@@ -258,7 +280,8 @@ static int pcap_write(int fd, struct packet *packet,
      }
  
      block_total_len = packet_len + tpm_packet_len + filler_len + sizeof(uint32_t);
@@ -215,7 +216,7 @@ Index: src/swtpm/pcap.c
  
      return writev_full(fd, iov, num_iov);
  }
-@@ -278,33 +300,40 @@ static int pcap_file_write_idb(struct pcap_state *ps)
+@@ -278,33 +301,40 @@ static int pcap_file_write_idb(struct pcap_state *ps)
  /* Write a simulated TCP SYN/SYN+ACK/ACK or FIN/FIN+ACK/ACK exchange */
  static int pcap_file_tcp_flags(struct pcap_state *ps, uint8_t flag)
  {
@@ -270,7 +271,7 @@ Index: src/swtpm/pcap.c
          return -1;
  
      return 0;
-@@ -361,19 +390,20 @@ int pcap_packet_record_write(struct pcap_state *ps,
+@@ -361,19 +391,20 @@ int pcap_packet_record_write(struct pcap_state *ps,
                               void *tpm_packet, uint32_t tpm_packet_len,
                               bool to_tpm)
  {

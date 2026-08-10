@@ -1,14 +1,21 @@
 Index: tests/test_tpm2_swtpm_cert
 --- tests/test_tpm2_swtpm_cert.orig
 +++ tests/test_tpm2_swtpm_cert
-@@ -41,6 +41,60 @@ ISSUERCERT_MLDSA87=${TMPDIR}/mldsa87-issuercert.pem
+@@ -41,6 +41,71 @@ ISSUERCERT_MLDSA87=${TMPDIR}/mldsa87-issuercert.pem
  # ED448 key used for signing
  ISSUERCERT_ED448=${TMPDIR}/ed448-issuercert.pem
  
 +if openssl version 2>/dev/null | grep -qi 'LibreSSL'; then
-+set -x
 +    EC521CSR=${TMPDIR}/ec521-signing.csr
 +    RSA3072CSR=${TMPDIR}/rsa3072-signing.csr
++    ISSUER_EXTFILE=${TMPDIR}/issuer-ext.cnf
++    cat > "${ISSUER_EXTFILE}" <<EOF
++[v3_ca]
++basicConstraints = critical,CA:TRUE
++keyUsage = critical,keyCertSign,cRLSign
++subjectKeyIdentifier = hash
++authorityKeyIdentifier = keyid,issuer
++EOF
 +    if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>&1) ||
 +       ! msg=$(openssl rsa -in "${RSAPRIVKEY}" -pubout -out "${RSAPUBKEY}" 2>&1) ||
 +       ! msg=$(openssl ecparam -name prime256v1 -genkey -noout -out "${EC256PRIVKEY}" 2>&1) ||
@@ -39,6 +46,8 @@ Index: tests/test_tpm2_swtpm_cert
 +            -CAkey "${CAKEY}" \
 +            -CAcreateserial \
 +            -days 1000 \
++            -extfile "${ISSUER_EXTFILE}" \
++            -extensions v3_ca \
 +            -out "${ISSUERCERT_EC521}" 2>&1) ||
 +       ! msg=$(openssl req \
 +            -new \
@@ -52,6 +61,8 @@ Index: tests/test_tpm2_swtpm_cert
 +            -CAkey "${CAKEY}" \
 +            -CAcreateserial \
 +            -days 1000 \
++            -extfile "${ISSUER_EXTFILE}" \
++            -extensions v3_ca \
 +            -out "${ISSUERCERT_RSA3072}" 2>&1) \
 +; then
 +        echo "Could not create the required keys"
@@ -62,7 +73,7 @@ Index: tests/test_tpm2_swtpm_cert
  if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>&1) ||
     ! msg=$(openssl rsa -in "${RSAPRIVKEY}" -pubout -out "${RSAPUBKEY}" 2>&1) ||
     ! msg=$(openssl ecparam -name prime256v1 -genkey -noout -out "${EC256PRIVKEY}" 2>&1) || \
-@@ -102,6 +156,7 @@ if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>
+@@ -102,6 +167,7 @@ if ! msg=$(openssl genrsa -out "${RSAPRIVKEY}" 2432 2>
  	echo "${msg}"
  	exit 1
  fi
@@ -70,19 +81,36 @@ Index: tests/test_tpm2_swtpm_cert
  
  echo "Testing with RSA certificate signing key"
  
-@@ -131,6 +186,7 @@ ret=$?
+@@ -111,6 +177,7 @@ PARAM_MLKEM1024PUBKEY="${MLKEM1024PUBKEY}" \
+ PARAM_MLDSA87PUBKEY="${MLDSA87PUBKEY}" \
+ PARAM_SIGNKEY="${RSA3072PRIVKEY}" \
+ PARAM_ISSUERCERT="${ISSUERCERT_RSA3072}" \
++PARAM_CACERT="${CACERT}" \
+ PARAM_CERT_SIZES="1046 841 1092 841 2340 1572 3364 1057 806 973 3245 973 1112" \
+ 	./_test_tpm2_swtpm_cert
+ ret=$?
+@@ -125,12 +192,17 @@ PARAM_MLKEM1024PUBKEY="${MLKEM1024PUBKEY}" \
+ PARAM_MLDSA87PUBKEY="${MLDSA87PUBKEY}" \
+ PARAM_SIGNKEY="${EC521PRIVKEY}" \
+ PARAM_ISSUERCERT="${ISSUERCERT_EC521}" \
++PARAM_CACERT="${CACERT}" \
+ PARAM_CERT_SIZES="792-794 587-589 838-840 587-589 2086-2088 1318-1320 3110-3112 804-805 552-554 719-721 2991-2993 720-721 858-860" \
+ 	./_test_tpm2_swtpm_cert
+ ret=$?
  [ $ret -ne 0 ] && exit $ret
  
  
-+if ! openssl version 2>/dev/null | grep -qi 'LibreSSL'; then
++if openssl version 2>/dev/null | grep -qi 'LibreSSL'; then
++printf "\nWarning: ml-dsa-87 and Ed448 are not yet supported with LibreSSL\n"
++	exit 0
++fi
  printf "\nTesting with ml-dsa-87 certificate signing key\n"
  
  PARAM_RSAPUBKEY="${RSAPUBKEY}" \
-@@ -157,6 +213,6 @@ PARAM_CERT_SIZES="758 553 804 553 2052 1284 3076 769 5
+@@ -157,6 +229,5 @@ PARAM_CERT_SIZES="758 553 804 553 2052 1284 3076 769 5
  	./_test_tpm2_swtpm_cert
  ret=$?
  [ $ret -ne 0 ] && exit $ret
 -
-+fi
  
  exit 0
