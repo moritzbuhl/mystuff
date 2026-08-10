@@ -2,8 +2,8 @@ COMMENT =	TPM emulator with socket and character device interface
 
 GH_ACCOUNT =	stefanberger
 GH_PROJECT =	swtpm
-GH_COMMIT =	a1d85c9ee73af2d4ebc91fa8a5d06858ebf1b5f2
-DISTNAME =	swtpm-0.10.2pre20260611
+GH_COMMIT =	db2386b2c1530de3a7fa57a8214c3630e785ec2f
+DISTNAME =	swtpm-0.10.2pre20260715
 
 CATEGORIES =	emulators security
 
